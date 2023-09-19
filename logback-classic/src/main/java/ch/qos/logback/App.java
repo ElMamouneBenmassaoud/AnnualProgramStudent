@@ -9,5 +9,6 @@ private static final Logger log = LoggerFactory.getLogger(App.class);
     public static void main(String[] args) {
         log.info("Hello, ");
         log.error("world !");
+        log.warn("world depuis warn!");
     }
 }
