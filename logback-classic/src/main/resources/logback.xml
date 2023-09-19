@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="FICHIER" class="ch.qos.logback.core.FileAppender">
+        <file>webg5.log</file>
+        <encoder>
+            <pattern>%d %-5p [%c] - %m%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="ch.qos.logback.App" level="warn">
+        <appender-ref ref="FICHIER" />
+    </logger>
+ </configuration>
