@@ -13,6 +13,15 @@
 </header>
 <main>
     Bienvenue sur le site de gestion du PAE annuel des étudiants.
+
+    <table>
+        <tr><th>Sigle</th><th>Titre</th><th>ECTS</th></tr>
+        <tr th:each ="course : ${courses}">
+            <td th:text = "${course.id}">nom</td>
+            <td th:text = "${course.title}">nom</td>
+            <td th:text = "${course.credits}">nom</td>
+        </tr>
+    </table>
 </main>
 </body>
 </html>
