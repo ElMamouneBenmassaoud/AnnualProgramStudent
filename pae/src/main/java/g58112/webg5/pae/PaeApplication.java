@@ -1,7 +1,7 @@
 package g58112.webg5.pae;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 @SpringBootApplication
 public class PaeApplication {
