@@ -13,4 +13,10 @@ public class Course {
         this.title = title;
         this.credits = credits;
     }
+
+    public Course() {
+        this.id = "";
+        this.title = "";
+        this.credits = 0;
+    }
 }
