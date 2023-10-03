@@ -27,16 +27,20 @@ layout:decorate="~{layout}">
         <h2>Ajouter un cours</h2>
         <form class="addCourse" th:action="@{/course/create}" th:object="${course}" method="post">
             <label for="sigle">Sigle :</label>
-            <input name="sigle" type="text" th:field="*{id}" required/>
+            <input name="sigle" type="text" th:field="*{id}" th:errorclass="errorField" required/>
+            <span th:errors="*{id}" class="errorMsg">erreur</span>
 
             <label for="title">Titre :</label>
-            <input name="title" type="text" th:field="*{title}" required/>
+            <input name="title" type="text" th:field="*{title}" th:errorclass="errorField" required/>
+            <span th:errors="*{title}" class="errorMsg">erreur</span>
 
             <label for="credits">Crédits :</label>
-            <input name="credits" type="number" th:field="*{credits}" required/>
-            <button type="submit">Ajouter</button>
-        </form>
+            <input name="credits" type="number" th:field="*{credits}" th:errorclass="errorField" required/>
+            <span th:errors="*{credits}" class="errorMsg">erreur</span>
 
+            <button type="submit">Ajouter</button>
+            
+        </form>
 
         <button><a th:href="@{/}">Retour à la page principale.</a></button>
     </main>
