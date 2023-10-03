@@ -38,9 +38,10 @@ public class CourseController {
 
     @PostMapping("/course/create")
     public String create(@Valid Course course, Errors errors) {
-        if (!errors.hasErrors()){
-            PAE.addCourse(course);
+        if (errors.hasErrors()){
+            return "courses";
         }
+        PAE.addCourse(course);
         return "redirect:/courses";
     }
 

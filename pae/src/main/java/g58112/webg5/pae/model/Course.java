@@ -10,13 +10,13 @@ import lombok.Data;
 @Data
 public class Course {
     @NotBlank @NotNull @Size(min=4 , max=10, message = "Le nombre de caractère doit etre compris entre 4 et 10 caractères !") 
-    @Pattern(regexp = "[A-Za-z][A-Za-z0-9]∗",message="Le login est composé de chiffres et de lettres et doit commencer par une lettre.")
+    @Pattern(regexp = "^[a-zA-Z][a-zA-Z0-9]*$",message="Le sigle est composé de chiffres et de lettres et doit commencer par une lettre.")
     private String id;
 
     @NotBlank @NotNull @Size(max=100)
     private String title;
 
-    @NotBlank @NotNull @Positive
+    @NotNull @Positive
     private int credits;
 
     public Course(String id, String title, int credits) {
