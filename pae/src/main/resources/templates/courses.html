@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<img class="logo" th:src="@{/img/logo-he2b.png}" alt="logo he2b" height="60">
-<header>
-    <h1>Programme annuel des étudiants</h1>
-    <h3>HE2B-ESI / WEBG5 / 58112 / 2023-2024</h3>
-</header>
-<main>
-    <div class="courses">
-    <h2>Liste des cours :</h2>
-    <th:block th:if="${#lists.isEmpty(courses)}">
-        <p>Aucun cours</p>
-    </th:block>
-    <table th:if="${not #lists.isEmpty(courses)}">
-        <tr><th>Sigle</th><th>Titre</th><th>ECTS</th></tr>
-        
-        <tr th:each ="course : ${courses}">
-            <td><a th:href="@{/course/{courseId}/details(courseId=${course.id})}"th:text = "${course.id}">nom</a></td>
-            <td><a th:href="@{/course/{courseId}/details(courseId=${course.id})}"th:text = "${course.title}">nom</a></td>
-            <td th:text = "${course.credits}">nom</td>
-        </tr>
-    </table>
-</div>
+    <main layout:fragment ="content">
+        <div class="courses">
+        <h2>Liste des cours :</h2>
+        <th:block th:if="${#lists.isEmpty(courses)}">
+            <p>Aucun cours</p>
+        </th:block>
+        <table th:if="${not #lists.isEmpty(courses)}">
+            <tr><th>Sigle</th><th>Titre</th><th>ECTS</th></tr>
+            
+            <tr th:each ="course : ${courses}">
+                <td><a th:href="@{/course/{courseId}/details(courseId=${course.id})}"th:text = "${course.id}">nom</a></td>
+                <td><a th:href="@{/course/{courseId}/details(courseId=${course.id})}"th:text = "${course.title}">nom</a></td>
+                <td th:text = "${course.credits}">nom</td>
+            </tr>
+        </table>
+    </div>
 
-    <h2>Ajouter un cours</h2>
-    <form class="addCourse" th:action="@{/course/create}" th:object="${course}" method="post">
-		<label for="sigle">Sigle :</label>
-		<input name="sigle" type="text" th:field="*{id}" required/>
+        <h2>Ajouter un cours</h2>
+        <form class="addCourse" th:action="@{/course/create}" th:object="${course}" method="post">
+            <label for="sigle">Sigle :</label>
+            <input name="sigle" type="text" th:field="*{id}" required/>
 
-		<label for="title">Titre :</label>
-		<input name="title" type="text" th:field="*{title}" required/>
+            <label for="title">Titre :</label>
+            <input name="title" type="text" th:field="*{title}" required/>
 
-		<label for="credits">Crédits :</label>
-		<input name="credits" type="number" th:field="*{credits}" required/>
-		<button type="submit">Ajouter</button>
-	</form>
+            <label for="credits">Crédits :</label>
+            <input name="credits" type="number" th:field="*{credits}" required/>
+            <button type="submit">Ajouter</button>
+        </form>
 
 
-    <button><a th:href="@{/}">Retour à la page principale.</a></button>
-</main>
+        <button><a th:href="@{/}">Retour à la page principale.</a></button>
+    </main>
 </body>
 </html>

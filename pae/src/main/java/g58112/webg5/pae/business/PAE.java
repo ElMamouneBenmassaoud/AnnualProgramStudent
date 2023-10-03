@@ -5,10 +5,12 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import g58112.webg5.pae.model.Course;
 import lombok.Getter;
 
+@Service
 public class PAE {
     
     @Getter

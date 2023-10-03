@@ -56,3 +56,15 @@
 2023-10-01 19:15:44,545 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-10-01 19:15:44,786 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 0.267 seconds (process running for 359.278)
 2023-10-01 19:16:14,706 INFO  [g58112.webg5.pae.business.PAE] - Nouveau cours ajouté : Course(id=dd, title=dd, credits=0)
+2023-10-03 10:37:07,455 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 85102 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-10-03 10:37:07,460 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-03 10:37:07,461 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-03 10:37:09,171 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 2.063 seconds (process running for 2.899)
+2023-10-03 10:40:44,633 INFO  [g58112.webg5.pae.business.PAE] - Nouveau cours ajouté : Course(id=ATLG4, title=Atelier logiciel, credits=3)
+2023-10-03 10:48:35,293 INFO  [g58112.webg5.pae.business.PAE] - Nouveau cours ajouté : Course(id=WEBG5, title=web, credits=3)
+2023-10-03 10:49:00,633 INFO  [g58112.webg5.pae.business.PAE] - Nouveau cours ajouté : Course(id=WEBG5, title=web, credits=3)
+2023-10-03 10:49:03,197 INFO  [g58112.webg5.pae.business.PAE] - Nouveau cours ajouté : Course(id=WEBG5, title=web, credits=3)
+2023-10-03 11:10:04,999 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 85102 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-10-03 11:10:05,000 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-03 11:10:05,000 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-03 11:10:05,440 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 0.519 seconds (process running for 1979.168)
