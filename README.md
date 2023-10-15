@@ -19,6 +19,6 @@ Demander au prof par rapport à l'adresse ip du client rest (localhost ou ipadre
 
 ## Semaine 5
 - Chapitre : 12 (thymeleaf et ajax)
-
+###### A faire :
 - Chapitre : 13 (Un front-end indépendant)
-###### Pas encore finis : 
+ 
