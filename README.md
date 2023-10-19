@@ -3,7 +3,8 @@
 ## To Ask
 Demander au prof par rapport à l'adresse ip du client rest (localhost ou ipadresse)
 
-## Semaine 1 : ^18/09/2023^
+## Semaine 1 : 
+^18/09/2023^
 - Chapitres : 3-4-5-6 (VS Codium, Trace, Lombok, Spring)
 
 ## Semaine 2
