@@ -1,0 +1,11 @@
+<configuration> 
+    <appender name="FICHIER" class="ch.qos.logback.core.FileAppender"> 
+        <file>app.log</file> 
+        <encoder> 
+            <pattern>%d %-5p [%c] - %m%n</pattern> 
+        </encoder> 
+    </appender> 
+    <logger name="g58112" level="debug"> 
+        <appender-ref ref="FICHIER" /> 
+    </logger> 
+</configuration>
