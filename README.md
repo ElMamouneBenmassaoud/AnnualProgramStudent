@@ -6,8 +6,7 @@ Demander au prof par rapport à l'adresse ip du client rest (localhost ou ipadre
 ## Semaine 1 : <sub>_19/09/2023_</sub>
 - Chapitres : 3-4-5-6 (VS Codium, Trace, Lombok, Spring)
 
-## Semaine 2 : 
-##### 26/09/2023
+## Semaine 2 : ##### 26/09/2023
 - Chapitres : 7-8 (thymeleaf)
 
 ## Semaine 3 : 03/10/2023
