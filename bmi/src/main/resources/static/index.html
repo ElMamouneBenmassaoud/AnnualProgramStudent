@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI client</title>
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#compute").click(function () {
+                let poids = $("#poids").val();
+                let taille = $("#taille").val();
+                let genre = $("input[name=genre]:checked").val();
+                let url = "http://localhost:8080/api/bmi?"
+                    + "weight=" + poids
+                    + "&height=" + taille
+                    + "&gender=" + genre;
+                $("#report").load(url);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Calcul IMC</h1>
+    <p>Entrez vos informations.</p>
+    <input type="radio" name="genre" value="man" checked> Homme
+    <input type="radio" name="genre" value="woman"> Femme<br/>
+    Votre taille (en cm) : <input id="taille" value="184" size="10" /><br/>
+    Votre poids (en kg) : <input id="poids" value="95" size="10" /><br/>
+    <button id="compute">Calculer</button><br/>
+    <br/>
+    <div id="report">
+    </div>
+</body>
+
+</html>
