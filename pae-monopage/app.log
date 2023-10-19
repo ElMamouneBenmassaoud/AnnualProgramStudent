@@ -262,3 +262,32 @@
 2023-10-19 12:21:10,151 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
 2023-10-19 12:21:10,152 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-10-19 12:21:11,874 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 2.064 seconds (process running for 2.904)
+2023-10-19 20:22:20,427 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 1489 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage)
+2023-10-19 20:22:20,432 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-19 20:22:20,434 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-19 20:22:21,861 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 1.757 seconds (process running for 2.494)
+2023-10-19 20:24:19,558 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 1489 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage)
+2023-10-19 20:24:19,560 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-19 20:24:19,561 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-19 20:24:20,019 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 0.536 seconds (process running for 120.652)
+2023-10-19 20:24:24,565 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 1489 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage)
+2023-10-19 20:24:24,565 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-19 20:24:24,566 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-19 20:24:24,866 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 0.352 seconds (process running for 125.499)
+2023-10-19 20:24:30,223 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 1544 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage)
+2023-10-19 20:24:30,228 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-19 20:24:30,229 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-19 20:24:31,631 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 1.713 seconds (process running for 2.432)
+2023-10-19 20:24:37,416 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/WEBG5
+2023-10-19 20:24:39,491 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/DEV3
+2023-10-19 20:24:41,136 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/INT1
+2023-10-19 20:25:04,788 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/INT1
+2023-10-19 20:25:06,319 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/DEV3
+2023-10-19 20:25:07,738 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/INT1
+2023-10-19 20:25:43,859 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 1584 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae-monopage)
+2023-10-19 20:25:43,865 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-19 20:25:43,866 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-19 20:25:45,305 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 1.787 seconds (process running for 2.493)
+2023-10-19 20:27:07,946 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/WEBG5
+2023-10-19 20:27:09,726 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/DEV3
+2023-10-19 20:27:12,626 INFO  [g58112.webg5.pae.rest.PaeRestController] - Rest: called /course/INT1

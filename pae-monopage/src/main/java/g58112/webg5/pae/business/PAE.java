@@ -9,13 +9,21 @@ import org.springframework.stereotype.Service;
 
 import g58112.webg5.pae.model.Course;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
 @Service
+@Slf4j
 public class PAE {
     
     @Getter
     private final static List<Course> courses = new ArrayList<>();
-    public static final Logger log = LoggerFactory.getLogger(PAE.class);
+    
+    static {
+        courses.add(new Course("INT1", "Introduction I", 10));
+        courses.add(new Course("DEV3", "Développement III", 5));
+        courses.add(new Course("WEBG5", "Web III", 5));
+    }
+
 
     public static void addCourse(Course course) {
         log.info("Nouveau cours ajouté : " + course.toString());
