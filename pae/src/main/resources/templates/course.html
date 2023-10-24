@@ -8,6 +8,7 @@ layout:decorate="~{layout}">
 </head>
 <body>
 <main layout:fragment ="content">
+    <p><span th:text="${#strings.toUpperCase(course.title)}">Course</span></p>
     <button><a th:href="@{/}">Retour à la page principale.</a></button>
 </main>
 </body>

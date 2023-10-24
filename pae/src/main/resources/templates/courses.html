@@ -39,10 +39,14 @@ layout:decorate="~{layout}">
             <span th:errors="*{credits}" class="errorMsg">erreur</span>
 
             <button type="submit">Ajouter</button>
-            
-        </form>
 
-        <button><a th:href="@{/}">Retour à la page principale.</a></button>
+            <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show fixed-right" role="alert">
+                <p th:errors="*{global}" th:text="${error}"></p>
+            </div>
+
+        </form>
     </main>
+      
 </body>
+
 </html>

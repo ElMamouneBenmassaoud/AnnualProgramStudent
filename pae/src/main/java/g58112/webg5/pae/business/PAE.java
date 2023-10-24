@@ -1,18 +1,13 @@
 package g58112.webg5.pae.business;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 import g58112.webg5.pae.database.CourseDB;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import g58112.webg5.pae.model.Course;
-import lombok.Getter;
 
 @Service
 @Slf4j
@@ -38,9 +33,9 @@ public class PAE {
         log.debug("Nouveau cours ajouté : " + course);
     }
 
-    public Optional<Course> getCourse(String courseId) throws Exception{
-        if(courseDB.existsById(courseId)){
-            return courseDB.findById(courseId);
+    public Course getCourse(String courseId) throws Exception{
+        if(courseDB.existsById(courseId) && courseDB.findById(courseId).isPresent()){
+            return courseDB.findById(courseId).get();
         }
         throw new IllegalArgumentException("Ce cours n'existe pas " + courseId);
     }
