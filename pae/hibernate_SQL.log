@@ -594,3 +594,23 @@
 2023-10-24 21:55:54,624 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
 2023-10-24 21:55:54,648 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
 2023-10-24 21:56:35,359 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 21:59:05,941 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 21:59:05,947 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-10-24 21:59:06,648 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:06,679 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:07,627 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:07,630 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:07,964 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-10-24 21:59:12,462 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:12,471 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:12,481 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-10-24 21:59:18,733 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:18,743 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:27,456 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:27,464 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:27,471 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-10-24 21:59:27,490 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0 where c1_0.id=?
+2023-10-24 21:59:27,532 DEBUG [org.hibernate.SQL] - insert into course (credits,title,id) values (?,?,?)
+2023-10-24 21:59:27,549 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:27,551 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 21:59:42,856 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
