@@ -1,7 +1,7 @@
 # webg5
 
-## To Ask
-Demander au prof par rapport à l'adresse ip du client rest (localhost ou ipadresse)
+## ToDo
+- Régler le projet pour qu'il soit en accord avec la database.
 
 ## Semaine 1 : <sub>_19/09/2023_</sub>
 - Chapitres : 3-4-5-6 (VS Codium, Trace, Lombok, Spring)
