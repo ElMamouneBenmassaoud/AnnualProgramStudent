@@ -1,0 +1,41 @@
+2023-10-24 14:54:45,842 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 14:54:45,860 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-10-24 14:54:46,561 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:00:35,843 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 15:00:44,539 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 15:00:44,557 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-10-24 15:00:45,312 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:08:09,973 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 15:08:20,101 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 15:08:20,117 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-10-24 15:08:20,823 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:08:20,852 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0 where c1_0.id=?
+2023-10-24 15:08:20,869 DEBUG [org.hibernate.SQL] - insert into course (credits,title,id) values (?,?,?)
+2023-10-24 15:08:20,882 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:27:53,392 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 15:28:05,390 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-10-24 15:28:05,408 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-10-24 15:28:06,133 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:28:06,159 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:28:23,782 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:28:23,788 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:30:01,573 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:30:01,578 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:30:01,702 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0 where c1_0.id=?
+2023-10-24 15:30:01,723 DEBUG [org.hibernate.SQL] - insert into course (credits,title,id) values (?,?,?)
+2023-10-24 15:30:01,746 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:30:01,747 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:32:59,288 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:32:59,298 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:33:11,211 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:33:11,218 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:33:11,229 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0 where c1_0.id=?
+2023-10-24 15:33:11,274 DEBUG [org.hibernate.SQL] - insert into course (credits,title,id) values (?,?,?)
+2023-10-24 15:33:11,294 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:33:11,298 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:41:56,168 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:41:56,172 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:41:59,589 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:41:59,596 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:43:53,516 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-10-24 15:43:53,523 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0

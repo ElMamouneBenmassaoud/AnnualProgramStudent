@@ -1,0 +1,239 @@
+2023-10-24 14:54:43,550 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-24 14:54:44,084 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24 14:54:44,118 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2023-10-24 14:54:44,564 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-10-24 14:54:44,613 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1061 ms
+2023-10-24 14:54:44,895 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-10-24 14:54:44,949 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-10-24 14:54:44,950 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-10-24 14:54:45,237 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24 14:54:45,872 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 14:54:46,163 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24 14:54:46,251 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24 14:54:46,301 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 8 mappings in 'requestMappingHandlerMapping'
+2023-10-24 14:54:46,327 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24 14:54:46,462 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-10-24 14:54:46,490 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-24 15:00:35,838 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 15:00:35,854 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-10-24 15:00:42,183 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-24 15:00:42,718 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24 15:00:42,755 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2023-10-24 15:00:43,236 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-10-24 15:00:43,276 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1091 ms
+2023-10-24 15:00:43,566 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-10-24 15:00:43,634 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-10-24 15:00:43,635 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-10-24 15:00:43,921 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24 15:00:44,569 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 15:00:44,894 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24 15:00:44,980 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24 15:00:45,035 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 8 mappings in 'requestMappingHandlerMapping'
+2023-10-24 15:00:45,063 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24 15:00:45,218 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-10-24 15:00:45,247 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-24 15:01:51,245 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-10-24 15:01:51,248 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-10-24 15:01:51,248 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-10-24 15:01:51,248 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-10-24 15:01:51,255 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2dbc0d9a
+2023-10-24 15:01:51,256 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@41a0ceb3
+2023-10-24 15:01:51,256 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 15:01:51,256 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 10 ms
+2023-10-24 15:01:51,268 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/", parameters={}
+2023-10-24 15:01:51,279 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.PaeController#home()
+2023-10-24 15:01:51,312 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:01:52,311 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:01:52,393 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:01:52,394 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:01:52,404 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:01:52,404 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:01:52,418 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:01:52,419 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:01:54,729 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-10-24 15:01:54,732 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-10-24 15:01:54,803 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:01:54,893 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:01:54,954 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:01:54,953 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:01:54,959 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:01:54,959 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:01:54,963 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:01:54,963 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:08:09,967 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 15:08:09,992 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-10-24 15:08:17,701 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-24 15:08:18,236 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24 15:08:18,272 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2023-10-24 15:08:18,750 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-10-24 15:08:18,789 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1086 ms
+2023-10-24 15:08:19,086 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-10-24 15:08:19,140 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-10-24 15:08:19,141 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-10-24 15:08:19,444 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24 15:08:20,127 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 15:08:20,423 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24 15:08:20,512 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24 15:08:20,570 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 8 mappings in 'requestMappingHandlerMapping'
+2023-10-24 15:08:20,590 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24 15:08:20,731 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-10-24 15:08:20,757 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-24 15:09:47,044 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-10-24 15:09:47,047 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-10-24 15:09:47,047 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-10-24 15:09:47,047 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-10-24 15:09:47,049 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@97bd983
+2023-10-24 15:09:47,050 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@62c72ec2
+2023-10-24 15:09:47,050 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 15:09:47,050 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+2023-10-24 15:09:47,063 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:09:47,063 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:09:47,072 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:09:47,072 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:09:47,089 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:09:47,089 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:27:53,371 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 15:27:53,433 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-10-24 15:28:03,046 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-24 15:28:03,599 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24 15:28:03,641 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2023-10-24 15:28:04,099 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-10-24 15:28:04,140 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1091 ms
+2023-10-24 15:28:04,436 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-10-24 15:28:04,491 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-10-24 15:28:04,492 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-10-24 15:28:04,788 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24 15:28:05,421 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24 15:28:05,725 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24 15:28:05,808 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24 15:28:05,863 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 8 mappings in 'requestMappingHandlerMapping'
+2023-10-24 15:28:05,880 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24 15:28:06,038 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-10-24 15:28:06,067 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-24 15:28:20,402 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-10-24 15:28:20,403 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-10-24 15:28:20,403 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-10-24 15:28:20,403 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-10-24 15:28:20,406 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6cae7a6d
+2023-10-24 15:28:20,406 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@63f4b760
+2023-10-24 15:28:20,406 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24 15:28:20,406 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 3 ms
+2023-10-24 15:28:20,417 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/", parameters={}
+2023-10-24 15:28:20,424 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.PaeController#home()
+2023-10-24 15:28:20,444 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:28:21,446 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:28:21,572 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:28:21,579 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:28:21,585 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:28:21,585 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:28:21,606 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:28:21,606 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:28:23,718 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-10-24 15:28:23,722 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-10-24 15:28:23,802 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:28:23,892 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:28:23,944 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:28:23,943 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:28:23,949 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:28:23,949 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:28:23,953 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:28:23,953 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:30:01,540 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/course/create", parameters={masked}
+2023-10-24 15:30:01,555 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#create(Course, Errors)
+2023-10-24 15:30:01,730 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-10-24 15:30:01,730 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-10-24 15:30:01,744 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-10-24 15:30:01,744 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-10-24 15:30:01,749 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:30:01,789 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:30:01,835 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:30:01,838 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:30:01,844 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:30:01,844 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:30:01,848 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:30:01,849 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:30:08,228 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses/db", parameters={}
+2023-10-24 15:30:08,231 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:30:08,242 DEBUG [org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - Resource not found
+2023-10-24 15:30:08,243 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-10-24 15:30:08,265 DEBUG [org.springframework.web.servlet.DispatcherServlet] - "ERROR" dispatch for GET "/error", parameters={}
+2023-10-24 15:30:08,271 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-10-24 15:30:08,298 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-10-24 15:30:08,306 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Exiting from "ERROR" dispatch, status 404
+2023-10-24 15:32:54,049 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/", parameters={}
+2023-10-24 15:32:54,061 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.PaeController#home()
+2023-10-24 15:32:54,147 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:32:54,606 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:32:54,713 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:32:54,713 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:32:54,725 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:32:54,725 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:32:54,753 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:32:54,753 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:32:59,219 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-10-24 15:32:59,224 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-10-24 15:32:59,305 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:32:59,358 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:32:59,422 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:32:59,422 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:32:59,427 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:32:59,427 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:32:59,497 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:32:59,497 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:33:11,186 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/course/create", parameters={masked}
+2023-10-24 15:33:11,191 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#create(Course, Errors)
+2023-10-24 15:33:11,280 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-10-24 15:33:11,281 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-10-24 15:33:11,292 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-10-24 15:33:11,293 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-10-24 15:33:11,299 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:33:11,338 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:33:11,368 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:33:11,368 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:33:11,369 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:33:11,369 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:33:11,374 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:33:11,375 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:56,150 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/course/WEBG5/details", parameters={}
+2023-10-24 15:41:56,156 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#detail(Model)
+2023-10-24 15:41:56,185 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:41:56,216 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:56,302 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:41:56,302 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:41:56,303 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:41:56,303 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:41:56,311 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:56,312 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:57,578 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/", parameters={}
+2023-10-24 15:41:57,582 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.PaeController#home()
+2023-10-24 15:41:57,588 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:41:57,628 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:57,665 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:41:57,666 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:41:57,668 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:41:57,668 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:41:57,670 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:57,670 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:59,571 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-10-24 15:41:59,573 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-10-24 15:41:59,599 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:41:59,648 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:59,699 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:41:59,699 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:41:59,700 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:41:59,700 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:41:59,707 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:41:59,708 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:43:53,492 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/course/create", parameters={masked}
+2023-10-24 15:43:53,496 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#create(Course, Errors)
+2023-10-24 15:43:53,611 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-24 15:43:53,646 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:43:53,686 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-10-24 15:43:53,687 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-10-24 15:43:53,687 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:43:53,688 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24 15:43:53,692 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-10-24 15:43:53,694 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK

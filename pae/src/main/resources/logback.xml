@@ -1,11 +1,40 @@
 <configuration> 
     <appender name="FICHIER" class="ch.qos.logback.core.FileAppender"> 
-        <file>app.log</file> 
+        <file>database.log</file>
         <encoder> 
             <pattern>%d %-5p [%c] - %m%n</pattern> 
         </encoder> 
     </appender> 
-    <logger name="g58112" level="debug"> 
+    <logger name="g58112.webg5.pae.database" level="info">
         <appender-ref ref="FICHIER" /> 
-    </logger> 
+    </logger>
+
+    <appender name="FICHIER2" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5p [%c] - %m%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="g58112" level="info">
+        <appender-ref ref="FICHIER2" />
+    </logger>
+
+    <appender name="FICHIER3" class="ch.qos.logback.core.FileAppender">
+        <file>springframework.log</file>
+        <encoder>
+            <pattern>%d %-5p [%c] - %m%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.springframework" level="info">
+        <appender-ref ref="FICHIER3" />
+    </logger>
+
+    <appender name="FICHIER4" class="ch.qos.logback.core.FileAppender">
+        <file>hibernate_SQL.log</file>
+        <encoder>
+            <pattern>%d %-5p [%c] - %m%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.hibernate.SQL" level="trace">
+        <appender-ref ref="FICHIER4" />
+    </logger>
 </configuration>

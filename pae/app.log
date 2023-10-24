@@ -258,3 +258,19 @@
 2023-10-15 00:59:43,742 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-10-15 00:59:45,470 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 2.062 seconds (process running for 2.78)
 2023-10-15 01:13:11,166 INFO  [g58112.webg5.pae.business.PAE] - Nouveau cours ajouté : Course(id=WEBG5, title=zzz, credits=1)
+2023-10-24 11:40:04,597 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 20.0.1 with PID 35558 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-10-24 11:40:04,600 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-24 11:40:04,602 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 11:40:07,276 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 2.976 seconds (process running for 4.204)
+2023-10-24 11:53:42,600 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 20.0.1 with PID 35956 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-10-24 11:53:42,605 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-24 11:53:42,611 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 11:53:44,441 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 2.141 seconds (process running for 3.072)
+2023-10-24 12:04:04,730 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 20.0.1 with PID 38608 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-10-24 12:04:04,734 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-24 12:04:04,735 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:04:06,391 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 1.958 seconds (process running for 2.458)
+2023-10-24 12:05:31,966 INFO  [g58112.webg5.pae.PaeApplication] - Starting PaeApplication using Java 17.0.9 with PID 38659 (/Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae/target/classes started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-10-24 12:05:31,970 DEBUG [g58112.webg5.pae.PaeApplication] - Running with Spring Boot v3.1.4, Spring v6.0.12
+2023-10-24 12:05:31,971 INFO  [g58112.webg5.pae.PaeApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:05:33,593 INFO  [g58112.webg5.pae.PaeApplication] - Started PaeApplication in 1.942 seconds (process running for 2.638)
