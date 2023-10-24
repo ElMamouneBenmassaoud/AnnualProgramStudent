@@ -1,7 +1,7 @@
 # webg5
 
 ## ToDo
-- Régler le projet pour qu'il soit en accord avec la database.
+- Chapitre : 16 (Les entités)
 
 ## Semaine 1 : <sub>_19/09/2023_</sub>
 - Chapitres : 3-4-5-6 (VS Codium, Trace, Lombok, Spring)
