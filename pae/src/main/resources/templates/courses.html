@@ -8,7 +8,7 @@ layout:decorate="~{layout}">
 </head>
 <body>
     <main layout:fragment ="content">
-        <div class="courses">
+        <div class="mainContent">
         <h2>Liste des cours :</h2>
         <th:block th:if="${#lists.isEmpty(courses)}">
             <p>Aucun cours</p>
@@ -27,15 +27,15 @@ layout:decorate="~{layout}">
         <h2>Ajouter un cours</h2>
         <form class="addCourse" th:action="@{/course/create}" th:object="${course}" method="post">
             <label for="sigle">Sigle :</label>
-            <input name="sigle" type="text" th:field="*{id}" th:errorclass="errorField" required/>
+            <input id="sigle" name="sigle" type="text" th:field="*{id}" th:errorclass="errorField" required/>
             <span th:errors="*{id}" class="errorMsg">erreur</span>
 
             <label for="title">Titre :</label>
-            <input name="title" type="text" th:field="*{title}" th:errorclass="errorField" required/>
+            <input id="title" name="title" type="text" th:field="*{title}" th:errorclass="errorField" required/>
             <span th:errors="*{title}" class="errorMsg">erreur</span>
 
             <label for="credits">Crédits :</label>
-            <input name="credits" type="number" th:field="*{credits}" th:errorclass="errorField" required/>
+            <input id="credits" name="credits" type="number" th:field="*{credits}" th:errorclass="errorField" required/>
             <span th:errors="*{credits}" class="errorMsg">erreur</span>
 
             <button type="submit">Ajouter</button>

@@ -33,6 +33,7 @@ th {
   background-color: #1c1c7c;
   color: white;
   padding: 8px;
+    text-align: center;
 }
 
 td {
@@ -44,7 +45,7 @@ tr:nth-child(even) {
   background-color: #f2f2f2; /* Couleur de fond pour les lignes paires */
 }
 
-.courses {
+.mainContent {
   margin-bottom: 10px;
 }
 
@@ -67,5 +68,25 @@ nav a {
 
 nav a:hover {
   opacity: 0.7;
+}
+
+.student-info {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.student-info label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+/* Style du texte à l'intérieur des balises <span> */
+.student-info span {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
