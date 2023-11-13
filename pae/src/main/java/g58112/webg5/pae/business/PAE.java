@@ -1,9 +1,5 @@
 package g58112.webg5.pae.business;
 
-import java.util.Optional;
-
-import g58112.webg5.pae.database.CourseDB;
-import g58112.webg5.pae.database.StudentDB;
 import g58112.webg5.pae.model.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,58 +10,65 @@ import g58112.webg5.pae.model.Course;
 @Service
 @Slf4j
 public class PAE {
+
     @Autowired
-    private CourseDB courseDB;
+    private StudentService studentService;
+
     @Autowired
-    private StudentDB studentDB;
+    CourseService courseService;
 
     public Iterable<Student> getStudents() throws Exception{
-        try {
-            log.info("Tous les étudiants: " + studentDB.findAll());
-            return studentDB.findAll();
-        }catch (Exception e){
-            throw new IllegalArgumentException(e.getMessage());
-        }
+        return studentService.getStudents();
     }
 
     public void addStudent(Student student) {
-        if(studentDB.existsById(student.getId())){
-            log.error("Erreur lors de la création du student en DB:" + student);
-            throw new IllegalArgumentException("This student already exists in our database : " + student.getId());
-        }
-        studentDB.save(student);
-        log.debug("Nouveau student ajouté : " + student);
+        studentService.addStudent(student);
     }
 
     public Student getStudent(int studentId) throws Exception{
-        if(studentDB.existsById(studentId) && studentDB.findById(studentId).isPresent()){
-            return studentDB.findById(studentId).get();
-        }
-        throw new IllegalArgumentException("Cet étudiant n'existe pas " + studentId);
+        return studentService.getStudent(studentId);
+    }
+
+    public void updateStudent(Student student) {
+        studentService.updateStudent(student);
     }
 
     public Iterable<Course> getCourses() throws Exception{
-        try {
-            log.info("Tous les cours: " + courseDB.findAll());
-            return courseDB.findAll();
-        }catch (Exception e){
-            throw new IllegalArgumentException(e.getMessage());
-        }
+        return courseService.getCourses();
     }
 
     public void addCourse(Course course) {
-        if(courseDB.existsById(course.getId())){
-            log.error("Erreur lors de la création du cours en DB:" + course);
-            throw new IllegalArgumentException("This course already exists in our database : " + course.getId());
-        }
-        courseDB.save(course);
-        log.debug("Nouveau cours ajouté : " + course);
+        courseService.addCourse(course);
     }
 
     public Course getCourse(String courseId) throws Exception{
-        if(courseDB.existsById(courseId) && courseDB.findById(courseId).isPresent()){
-            return courseDB.findById(courseId).get();
-        }
-        throw new IllegalArgumentException("Ce cours n'existe pas " + courseId);
+        return courseService.getCourse(courseId);
     }
+
+    public void enrollStudentToCourse(int studentId, String courseId) throws Exception {
+        System.out.println("enrollStudentToCourse PAE");
+
+        Student student = studentService.getStudent(studentId);
+        Course course = courseService.getCourse(courseId);
+        if (course.getStudents().contains(student)) {
+            throw new IllegalArgumentException("This student is already enrolled in this course");
+        }
+        enrollStudent(course, student);
+        courseService.updateCourse(course);
+    }
+
+    /**
+     * Enroll a student in the course
+     * this function keep consistency.
+     * @param course the course to register
+     * @param student the student to enroll
+     */
+    private void enrollStudent(Course course, Student student) {
+        System.out.println("enrollStudent private");
+        course.getStudents().add(student);
+        student.getCourses().add(course);
+
+    }
+
+
 }

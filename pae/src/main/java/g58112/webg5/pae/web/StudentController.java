@@ -3,17 +3,16 @@ package g58112.webg5.pae.web;
 import g58112.webg5.pae.business.PAE;
 import g58112.webg5.pae.model.Course;
 import g58112.webg5.pae.model.Student;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
+@RequestMapping("/students")
 @Controller
 @Slf4j
 public class StudentController {
@@ -30,18 +29,19 @@ public class StudentController {
         return new Student();
     }
 
-    @GetMapping("/students")
+    @GetMapping("")
     public String home(Model model) {
         return "students";
     }
 
-    @GetMapping("/student/{studentId}/details")
+    @GetMapping("/{studentId}/details")
     public String detail(@PathVariable int studentId, Model model) throws Exception {
         model.addAttribute("student", pae.getStudent(studentId));
+        model.addAttribute("courses", pae.getCourses());
         return "student";
     }
 
-    @PostMapping("/student/create")
+    @PostMapping("/create")
     public String create(@Valid Student student, Errors errors) {
         if (errors.hasErrors()){
             return "students";
@@ -55,4 +55,26 @@ public class StudentController {
             return "students";
         }
     }
+
+    @GetMapping("/{studentId}/registerCourse/{courseId}")
+    public String enrollStudentToCourse(Model model, @PathVariable("courseId") String courseId, @PathVariable("studentId") int studentId, HttpServletRequest request) {
+        try {
+            pae.enrollStudentToCourse(studentId, courseId);
+        } catch (Exception e) {
+            model.addAttribute("enrollmentError", "Error: " + e.getMessage());
+            log.error("The following student cannot be enrolled to the course: " + studentId + " " + courseId);
+            return "course";
+        }
+        return "redirect:" + getPreviousPageUrl(request);
+    }
+
+    /**
+     *
+     * @param request the request
+     * @return the previous page url
+     */
+    private String getPreviousPageUrl(HttpServletRequest request) {
+        return request.getHeader("referer");
+    }
+
 }

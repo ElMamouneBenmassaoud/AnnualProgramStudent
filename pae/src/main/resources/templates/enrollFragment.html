@@ -1,0 +1,23 @@
+<div th:if="${item.courses.isEmpty()}">
+    <p th:text="'L\'' + ${item.type} + ' n\'est inscrit à aucun cours.'"></p>
+</div>
+
+<div th:if="${not item.courses.isEmpty()}">
+    <h3 th:text="'Les ' + ${item.type} + ' que suit l\'' + ${item.type}"></h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Sigle</th>
+            <th>Nom</th>
+            <th>Crédits</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="course : ${item.courses}">
+            <td th:text="${course.id}"></td>
+            <td th:text="${course.title}"></td>
+            <td th:text="${course.credits}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

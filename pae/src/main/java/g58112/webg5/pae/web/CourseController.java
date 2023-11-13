@@ -3,19 +3,17 @@ package g58112.webg5.pae.web;
 import java.util.List;
 
 import g58112.webg5.pae.business.PAE;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 
 import g58112.webg5.pae.model.Course;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-
+@RequestMapping("/courses")
 @Controller
 @Slf4j
 public class CourseController {
@@ -32,18 +30,19 @@ public class CourseController {
         return new Course();
     }
 
-    @GetMapping("/courses")
+    @GetMapping("")
     public String home(Model model) {
         return "courses";
     }
 
-    @GetMapping("/course/{courseId}/details")
+    @GetMapping("/{courseId}/details")
     public String detail(@PathVariable String courseId, Model model) throws Exception {
         model.addAttribute("course", pae.getCourse(courseId));
+        model.addAttribute("students", pae.getStudents());
         return "course";
     }
 
-    @PostMapping("/course/create")
+    @PostMapping("/create")
     public String create(@Valid Course course, Errors errors) {
         if (errors.hasErrors()){
             return "courses";
@@ -57,4 +56,19 @@ public class CourseController {
             return "courses";
         }
     }
+    @PostMapping("/enrollStudent")
+    public String enrollStudentToCourse(Model model, String courseId, int studentId, HttpServletRequest request) {
+        try {
+            System.out.println("enrollStudentToCourse controller");
+            pae.enrollStudentToCourse(studentId, courseId);
+        } catch (Exception e) {
+            log.error("the following student cannot be enrolled to the course : " + studentId + " " + courseId);
+        }
+        return "redirect:" + getPreviousPageUrl(request);
+    }
+
+    private String getPreviousPageUrl(HttpServletRequest request) {
+        return request.getHeader("referer");
+    }
+
 }

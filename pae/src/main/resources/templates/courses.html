@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{layout}">
+      layout:decorate="~{layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-    <main layout:fragment ="content">
-        <div class="mainContent">
+<main layout:fragment="content">
+    <div class="mainContent">
         <h2>Liste des cours :</h2>
         <th:block th:if="${#lists.isEmpty(courses)}">
             <p>Aucun cours</p>
         </th:block>
-        <table th:if="${not #lists.isEmpty(courses)}">
-            <tr><th>Sigle</th><th>Titre</th><th>ECTS</th></tr>
-            
-            <tr th:each ="course : ${courses}">
-                <td><a th:href="@{/course/{courseId}/details(courseId=${course.id})}"th:text = "${course.id}">nom</a></td>
-                <td><a th:href="@{/course/{courseId}/details(courseId=${course.id})}"th:text = "${course.title}">nom</a></td>
-                <td th:text = "${course.credits}">nom</td>
+        <table class="table" th:if="${not #lists.isEmpty(courses)}">
+            <tr>
+                <th>Sigle</th>
+                <th>Titre</th>
+                <th>ECTS</th>
+            </tr>
+
+            <tr th:each="course : ${courses}">
+                <td><a th:href="@{/courses/{courseId}/details(courseId=${course.id})}" th:text="${course.id}">nom</a>
+                </td>
+                <td><a th:href="@{/courses/{courseId}/details(courseId=${course.id})}" th:text="${course.title}">nom</a>
+                </td>
+                <td th:text="${course.credits}">nom</td>
             </tr>
         </table>
     </div>
 
-        <h2>Ajouter un cours</h2>
-        <form class="addCourse" th:action="@{/course/create}" th:object="${course}" method="post">
+    <h2>Ajouter un cours</h2>
+    <form th:action="@{/courses/create}" th:object="${course}" method="post">
+
+        <div class="form-group col-3">
             <label for="sigle">Sigle :</label>
-            <input id="sigle" name="sigle" type="text" th:field="*{id}" th:errorclass="errorField" required/>
+            <input id="sigle" name="sigle" type="text" class="form-control" th:field="*{id}" th:errorclass="errorField" required/>
             <span th:errors="*{id}" class="errorMsg">erreur</span>
+        </div>
 
+        <div class="form-group col-3">
             <label for="title">Titre :</label>
-            <input id="title" name="title" type="text" th:field="*{title}" th:errorclass="errorField" required/>
+            <input id="title" name="title" type="text" class="form-control" th:field="*{title}" th:errorclass="errorField" required/>
             <span th:errors="*{title}" class="errorMsg">erreur</span>
+        </div>
 
+        <div class="form-group col-3">
             <label for="credits">Crédits :</label>
-            <input id="credits" name="credits" type="number" th:field="*{credits}" th:errorclass="errorField" required/>
+            <input id="credits" name="credits" type="number" class="form-control" th:field="*{credits}" th:errorclass="errorField" required/>
             <span th:errors="*{credits}" class="errorMsg">erreur</span>
+        </div>
 
-            <button type="submit">Ajouter</button>
+        <button type="submit" class="btn btn-primary ml-3">Ajouter</button>
 
-            <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show fixed-right" role="alert">
-                <p th:errors="*{global}" th:text="${error}"></p>
-            </div>
+        <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+            <p th:errors="*{global}" th:text="${error}"></p>
+        </div>
 
-        </form>
-    </main>
-      
+    </form>
+</main>
+
 </body>
 
 </html>

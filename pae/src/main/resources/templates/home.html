@@ -7,10 +7,48 @@ layout:decorate="~{layout}">
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<main layout:fragment ="content">
-    <p>Bienvenue sur le site de gestion du PAE annuel des étudiants.</p>
-    <button><a th:href="@{/courses}">Voir la liste des cours.</a></button>
-    <button><a th:href="@{/students}">Voir la liste des étudiants.</a></button>
+<main layout:fragment="content" class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenue sur le site de gestion du PAE annuel des étudiants!</h1>
+        <p class="lead">Notre site offre une plateforme de gestion complète pour le Programme d'Activités Étudiantes (PAE).</p>
+        <hr class="my-4">
+        <p>Explorez les fonctionnalités du site pour gérer les cours, les étudiants et bien plus encore.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" th:href="@{/courses}" role="button">Voir la liste des cours</a>
+            <a class="btn btn-success btn-lg" th:href="@{/students}" role="button">Voir la liste des étudiants</a>
+        </p>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #1c1c7c">Gestion des Cours</h5>
+                    <p class="card-text">Explorez et gérez la liste complète des cours offerts dans le programme.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #1c1c7c";>Gestion des Étudiants</h5>
+                    <p class="card-text">Consultez et administrez la liste des étudiants inscrits dans le programme.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a th:href="@{/db}" style="color: #1c1c7c; text-decoration: none; cursor: pointer;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Accès à la Base de Données</a>
+                    </h5>
+                    <p class="card-text">Explorez la base de données pour obtenir des informations détaillées sur le programme et les étudiants.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>

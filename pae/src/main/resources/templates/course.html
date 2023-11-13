@@ -7,9 +7,48 @@ layout:decorate="~{layout}">
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<main layout:fragment ="content">
-    <p><span th:text="${#strings.toUpperCase(course.title)}">Course</span></p>
-    <button><a th:href="@{/}">Retour à la page principale.</a></button>
+<main layout:fragment="content">
+    <h1 class="display-4 text-center mt-5 mb-4">
+        <span th:text="${course.id}"></span>
+        <span> - </span>
+        <span th:text="${course.title}"></span>
+    </h1>
+    <div th:if="${course.students.isEmpty()}">
+        <p>Aucun étudiant inscrit ici.</p>
+    </div>
+
+    <div th:if="${not course.students.isEmpty()}">
+        <h3>Les étudiants inscrits à ce cours</h3>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Matricule</th>
+                <th>Nom</th>
+                <th>Genre</th>
+                <th>Section</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="student : ${course.students}">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.name}"></td>
+                <td th:text="${student.gender}"></td>
+                <td th:text="${student.section}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form th:action="@{/courses/enrollStudent}" th:object="${course}" method="post">
+        <input type="hidden" name="courseId" th:value="${course.id}"/>
+        <label for="studentSelect">Sélectionnez un étudiant :</label>
+        <select id="studentSelect" name="studentId">
+            <option value="" th:if="${students.isEmpty()}">Aucun étudiant disponible</option>
+            <option th:each="student : ${students}" th:value="${student.id}" th:text="${student.name}"></option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Valider</button>
+    </form>
 </main>
 </body>
 </html>

@@ -9,3 +9,7 @@ insert into Course (id, title, credits)
            ('DONG5', 'Persistance des données', 2),
            ('SYSG5', 'Système d''exploitation', 4),
            ('ETE6', 'Stage et travaux de fin d''étude', 30);
+
+insert into Student (id, name, gender, section)
+values (1, 'Mamoun El Benmassoud', 'MALE', 'GESTION');
+

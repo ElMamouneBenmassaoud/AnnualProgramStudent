@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{layout}">
+      layout:decorate="~{layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-    <main layout:fragment ="content">
-        <div class="mainContent">
+<main layout:fragment="content">
+    <div class="mainContent">
         <h2>Liste des étudiants :</h2>
         <th:block th:if="${#lists.isEmpty(students)}">
             <p>Aucun étudiant</p>
         </th:block>
-        <table th:if="${not #lists.isEmpty(students)}">
-            <tr><th>MATRICULE</th><th>NOM</th><th>GENRE</th><th>SECTION</th></tr>
-            
-            <tr th:each ="student : ${students}">
-                <td><a th:href="@{/student/{studentId}/details(studentId=${student.id})}"th:text = "${student.id}">nom</a></td>
-                <td><a th:href="@{/student/{studentId}/details(studentId=${student.id})}"th:text = "${student.name}">nom</a></td>
-                <td th:text = "${student.gender}">nom</td>
-                <td th:text = "${student.section}">nom</td>
+        <table class="table" th:if="${not #lists.isEmpty(students)}">
+            <tr>
+                <th>MATRICULE</th>
+                <th>NOM</th>
+                <th>GENRE</th>
+                <th>SECTION</th>
+            </tr>
+
+            <tr th:each="student : ${students}">
+                <td><a th:href="@{/students/{studentId}/details(studentId=${student.id})}"
+                       th:text="${student.id}">nom</a></td>
+                <td><a th:href="@{/students/{studentId}/details(studentId=${student.id})}"
+                       th:text="${student.name}">nom</a></td>
+                <td th:text="${student.gender}">nom</td>
+                <td th:text="${student.section}">nom</td>
             </tr>
         </table>
     </div>
 
-        <h2>Ajouter un étudiant</h2>
-        <form class="addCourse" th:action="@{/student/create}" th:object="${student}" method="post">
-
+    <h2>Ajouter un étudiant</h2>
+    <form th:action="@{/students/create}" th:object="${student}" method="post">
+        <div class="form-group col-3">
             <label for="name">Nom :</label>
-            <input id="name" name="name" type="text" th:field="*{name}" th:errorclass="errorField" required/>
+            <input id="name" name="name" type="text" class="form-control" th:field="*{name}" th:errorclass="errorField" required/>
             <span th:errors="*{name}" class="errorMsg">erreur</span>
+        </div>
 
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" th:field="*{gender}" th:errorclass="errorField">
-                <option value="MALE">Male</option>
-                <option value="FEMALE">Female</option>
+        <div class="form-group col-3">
+            <label for="gender">Genre :</label>
+            <select id="gender" name="gender" class="form-control" th:field="*{gender}" th:errorclass="errorField">
+                <option value="MALE">Masculin</option>
+                <option value="FEMALE">Féminin</option>
             </select>
             <span th:errors="*{gender}" class="errorMsg">erreur</span>
+        </div>
 
-            <label for="section">Section:</label>
-            <select id="section" name="section" th:field="*{section}" th:errorclass="errorField">
+        <div class="form-group col-3">
+            <label for="section">Section :</label>
+            <select id="section" name="section" class="form-control" th:field="*{section}" th:errorclass="errorField">
                 <option value="GESTION">Gestion</option>
-                <option value="INDUSTRUELLE">Industruelle</option>
+                <option value="INDUSTRIELLE">Industrielle</option>
                 <option value="RESEAU">Réseau</option>
             </select>
             <span th:errors="*{section}" class="errorMsg">erreur</span>
+        </div>
 
+        <button type="submit" class="btn btn-primary ml-3">Ajouter</button>
 
-            <button type="submit">Ajouter</button>
+        <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+            <p th:errors="*{global}" th:text="${error}"></p>
+        </div>
+    </form>
+</main>
 
-            <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show fixed-right" role="alert">
-                <p th:errors="*{global}" th:text="${error}"></p>
-            </div>
-
-        </form>
-    </main>
-      
 </body>
 
 </html>

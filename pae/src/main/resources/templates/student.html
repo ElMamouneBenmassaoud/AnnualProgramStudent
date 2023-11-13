@@ -8,24 +8,66 @@ layout:decorate="~{layout}">
 </head>
 <body>
 <main layout:fragment ="content">
-    <p class="student-info">
-        <label>Matricule :</label>
-        <span th:text="${#strings.toUpperCase(student.id)}">Student</span>
-    </p>
-    <p class="student-info">
-        <label>Nom :</label>
-        <span th:text="${#strings.toUpperCase(student.name)}">Student</span>
-    </p>
-    <p class="student-info">
-        <label>Genre :</label>
-        <span th:text="${#strings.toUpperCase(student.gender)}">Student</span>
-    </p>
-    <p class="student-info">
-        <label>Section :</label>
-        <span th:text="${#strings.toUpperCase(student.section)}">Student</span>
-    </p>
+    <div class="container">
+        <h2>Student Information</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Matricule</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" th:text="${#strings.toUpperCase(student.id)}">Student</p>
+                    </div>
+                </div>
+            </div>
 
-    <button><a th:href="@{/}">Retour à la page principale.</a></button>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Nom</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" th:text="${#strings.toUpperCase(student.name)}">Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Genre</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" th:text="${#strings.toUpperCase(student.gender)}">Student</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Section</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" th:text="${#strings.toUpperCase(student.section)}">Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <form th:action="@{/courses/enrollStudent}" th:object="${student}" method="post">
+        <input type="hidden" name="studentId" th:value="${student.id}"/>
+        <label for="courseSelect">Sélectionnez un cours :</label>
+        <select id="courseSelect" name="courseId">
+            <option value="" th:if="${courses.isEmpty()}">Aucun cours disponible</option>
+            <option th:each="course : ${courses}" th:value="${course.id}" th:text="${course.title}"></option>
+        </select>
+        <button type="submit" class="btn btn-primary">Valider</button>
+    </form>
 </main>
 </body>
 </html>
