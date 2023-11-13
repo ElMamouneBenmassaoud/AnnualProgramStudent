@@ -49,12 +49,6 @@ tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
-.addCourse {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-
 .errorMsg {
   color: red;
   background: rgba(128, 128, 128, 0.1);
