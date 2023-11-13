@@ -1,7 +1,7 @@
 # webg5
 
 ## ToDo
-- Chapitre : 16 (Les entités)
+- Chapitre : 16.7 (Paresseux ou gourmand ?)
 
 ## Semaine 1 : <sub>_19/09/2023_</sub>
 - Chapitres : 3-4-5-6 (VS Codium, Trace, Lombok, Spring)
@@ -22,6 +22,10 @@
 ## Semaine 6 : <sub>_24/10/2023_</sub>
 - Chapitre : 14 (JDBC)
 - Chapitre : 15 (JPA _(Java Persistance API)_)
+
+## Semaine 7 : <sub>_06/11/2023_</sub>
+- Tester les différentes associations
+- Chapitre : 16 Les entités
 
 
  
