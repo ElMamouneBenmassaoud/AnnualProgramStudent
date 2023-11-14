@@ -1,0 +1,24 @@
+
+<div th:fragment ="fragment-courses(pageTitle, courses)" class="mainContent">
+    <h2 th:text="${pageTitle}">Liste des cours :</h2>
+    <th:block th:if="${#lists.isEmpty(courses)}">
+        <p>Aucun cours</p>
+    </th:block>
+    <table class="table" th:if="${not #lists.isEmpty(courses)}">
+        <tr>
+            <th>Sigle</th>
+            <th>Titre</th>
+            <th>ECTS</th>
+        </tr>
+
+        <tr th:each="course : ${courses}">
+            <td>
+                <a th:href="@{/courses/{courseId}/details(courseId=${course.id})}" th:text="${course.id}">nom</a>
+            </td>
+            <td>
+                <a th:href="@{/courses/{courseId}/details(courseId=${course.id})}" th:text="${course.title}">nom</a>
+            </td>
+            <td th:text="${course.credits}">nom</td>
+        </tr>
+    </table>
+</div>

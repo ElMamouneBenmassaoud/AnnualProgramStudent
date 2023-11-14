@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layout}">
+      layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
@@ -8,29 +8,8 @@
 </head>
 <body>
 <main layout:fragment="content">
-    <div class="mainContent">
-        <h2>Liste des étudiants :</h2>
-        <th:block th:if="${#lists.isEmpty(students)}">
-            <p>Aucun étudiant</p>
-        </th:block>
-        <table class="table" th:if="${not #lists.isEmpty(students)}">
-            <tr>
-                <th>MATRICULE</th>
-                <th>NOM</th>
-                <th>GENRE</th>
-                <th>SECTION</th>
-            </tr>
 
-            <tr th:each="student : ${students}">
-                <td><a th:href="@{/students/{studentId}/details(studentId=${student.id})}"
-                       th:text="${student.id}">nom</a></td>
-                <td><a th:href="@{/students/{studentId}/details(studentId=${student.id})}"
-                       th:text="${student.name}">nom</a></td>
-                <td th:text="${student.gender}">nom</td>
-                <td th:text="${student.section}">nom</td>
-            </tr>
-        </table>
-    </div>
+    <div th:replace="fragments/fragment-students :: fragment-students(pageTitle='Liste des étudiants', students=${students})"></div>
 
     <h2>Ajouter un étudiant</h2>
     <form th:action="@{/students/create}" th:object="${student}" method="post">

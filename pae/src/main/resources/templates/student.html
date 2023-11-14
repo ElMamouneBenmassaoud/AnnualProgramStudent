@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{layout}">
+layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
@@ -58,6 +58,8 @@ layout:decorate="~{layout}">
             </div>
         </div>
     </div>
+    <br>
+    <div th:replace="fragments/fragment-courses :: fragment-courses(pageTitle='Liste des cours', courses=${student.courses})"></div>
     <br>
     <form th:action="@{/courses/enrollStudent}" th:object="${student}" method="post">
         <input type="hidden" name="studentId" th:value="${student.id}"/>

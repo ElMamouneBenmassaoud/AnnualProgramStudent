@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{layout}">
+layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
@@ -13,31 +13,9 @@ layout:decorate="~{layout}">
         <span> - </span>
         <span th:text="${course.title}"></span>
     </h1>
-    <div th:if="${course.students.isEmpty()}">
-        <p>Aucun étudiant inscrit ici.</p>
-    </div>
 
-    <div th:if="${not course.students.isEmpty()}">
-        <h3>Les étudiants inscrits à ce cours</h3>
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Matricule</th>
-                <th>Nom</th>
-                <th>Genre</th>
-                <th>Section</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="student : ${course.students}">
-                <td th:text="${student.id}"></td>
-                <td th:text="${student.name}"></td>
-                <td th:text="${student.gender}"></td>
-                <td th:text="${student.section}"></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <div th:replace="fragments/fragment-students :: fragment-students(pageTitle='Liste des étudiants inscrit à ce cours', students=${course.students})"></div>
+
 
     <form th:action="@{/courses/enrollStudent}" th:object="${course}" method="post">
         <input type="hidden" name="courseId" th:value="${course.id}"/>

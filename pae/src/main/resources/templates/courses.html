@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layout}">
+      layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
@@ -8,27 +8,7 @@
 </head>
 <body>
 <main layout:fragment="content">
-    <div class="mainContent">
-        <h2>Liste des cours :</h2>
-        <th:block th:if="${#lists.isEmpty(courses)}">
-            <p>Aucun cours</p>
-        </th:block>
-        <table class="table" th:if="${not #lists.isEmpty(courses)}">
-            <tr>
-                <th>Sigle</th>
-                <th>Titre</th>
-                <th>ECTS</th>
-            </tr>
-
-            <tr th:each="course : ${courses}">
-                <td><a th:href="@{/courses/{courseId}/details(courseId=${course.id})}" th:text="${course.id}">nom</a>
-                </td>
-                <td><a th:href="@{/courses/{courseId}/details(courseId=${course.id})}" th:text="${course.title}">nom</a>
-                </td>
-                <td th:text="${course.credits}">nom</td>
-            </tr>
-        </table>
-    </div>
+    <div th:replace="fragments/fragment-courses :: fragment-courses(pageTitle='Liste des cours', courses=${courses})"></div>
 
     <h2>Ajouter un cours</h2>
     <form th:action="@{/courses/create}" th:object="${course}" method="post">

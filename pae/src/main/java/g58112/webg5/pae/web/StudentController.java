@@ -55,26 +55,4 @@ public class StudentController {
             return "students";
         }
     }
-
-    @GetMapping("/{studentId}/registerCourse/{courseId}")
-    public String enrollStudentToCourse(Model model, @PathVariable("courseId") String courseId, @PathVariable("studentId") int studentId, HttpServletRequest request) {
-        try {
-            pae.enrollStudentToCourse(studentId, courseId);
-        } catch (Exception e) {
-            model.addAttribute("enrollmentError", "Error: " + e.getMessage());
-            log.error("The following student cannot be enrolled to the course: " + studentId + " " + courseId);
-            return "course";
-        }
-        return "redirect:" + getPreviousPageUrl(request);
-    }
-
-    /**
-     *
-     * @param request the request
-     * @return the previous page url
-     */
-    private String getPreviousPageUrl(HttpServletRequest request) {
-        return request.getHeader("referer");
-    }
-
 }
