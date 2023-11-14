@@ -16,6 +16,9 @@ layout:decorate="~{fragments/layout}">
 
     <div th:replace="fragments/fragment-students :: fragment-students(pageTitle='Liste des étudiants inscrit à ce cours', students=${course.students})"></div>
 
+    <div class = "alert alert-danger mt-4" th:if="${errorMessage}">
+        <p th:text="${errorMessage}"></p>
+    </div>
 
     <form th:action="@{/courses/enrollStudent}" th:object="${course}" method="post">
         <input type="hidden" name="courseId" th:value="${course.id}"/>

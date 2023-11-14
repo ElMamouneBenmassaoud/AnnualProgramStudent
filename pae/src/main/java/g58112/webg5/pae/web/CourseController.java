@@ -62,14 +62,18 @@ public class CourseController {
         }
     }
     @PostMapping("/enrollStudent")
-    public String enrollStudentToCourse(Model model, String courseId, int studentId, HttpServletRequest request) {
+    public String enrollStudentToCourse(Model model, String courseId, int studentId, HttpServletRequest request) throws Exception {
         try {
             System.out.println("enrollStudentToCourse controller");
             pae.enrollStudentToCourse(studentId, courseId);
+            return "redirect:" + getPreviousPageUrl(request);
         } catch (Exception e) {
             log.error("the following student cannot be enrolled to the course : " + studentId + " " + courseId);
+            model.addAttribute("errorMessage",e.getMessage());
+            model.addAttribute("course", pae.getCourse(courseId));
+            model.addAttribute("students", pae.getStudents());
+            return "course";
         }
-        return "redirect:" + getPreviousPageUrl(request);
     }
 
     private String getPreviousPageUrl(HttpServletRequest request) {
