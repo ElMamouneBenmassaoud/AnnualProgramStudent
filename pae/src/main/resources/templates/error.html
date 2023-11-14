@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>PAE Accueil</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+    <main layout:fragment="content" class="container mt-5">
+
+        <div class="display1">ERROR 404</div>
+        <div class = "alert alert-danger mt-4" th:if="${errorMessage}">
+            <p th:text="${errorMessage}"></p>
+        </div>
+
+    </main>
+</body>
+</html>

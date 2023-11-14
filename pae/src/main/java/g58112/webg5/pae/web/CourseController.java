@@ -37,8 +37,13 @@ public class CourseController {
 
     @GetMapping("/{courseId}/details")
     public String detail(@PathVariable String courseId, Model model) throws Exception {
-        model.addAttribute("course", pae.getCourse(courseId));
-        model.addAttribute("students", pae.getStudents());
+        try {
+            model.addAttribute("course", pae.getCourse(courseId));
+            model.addAttribute("students", pae.getStudents());
+        }catch (Exception e){
+            model.addAttribute("errorMessage",e.getMessage());
+            return "error";
+        }
         return "course";
     }
 
