@@ -57,4 +57,13 @@ public class StudentService {
         studentDB.save(student);
         log.info(PAE.class + "(updateStudent) The student has been updated : " + student);
     }
+
+    public Iterable<Student> getStudentsNameContaining(String name) throws Exception{
+        try {
+            log.info("Tous les étudiants: " + studentDB.findAll());
+            return studentDB.findByNameContainingIgnoreCase(name);
+        }catch (Exception e){
+            throw new IllegalArgumentException(e.getMessage());
+        }
+    }
 }

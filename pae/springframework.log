@@ -13800,3 +13800,619 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2023-11-16 17:51:39,850 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
 2023-11-16 17:51:39,851 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
 2023-11-16 17:51:39,852 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:00:15,331 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 18:00:15,361 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-11-16 18:00:25,165 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 18:00:25,706 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-16 18:00:25,760 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2023-11-16 18:00:26,229 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-11-16 18:00:26,278 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1109 ms
+2023-11-16 18:00:26,586 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-11-16 18:00:26,638 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-16 18:00:26,638 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-11-16 18:00:26,941 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-16 18:00:27,768 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 18:00:28,094 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-16 18:00:28,716 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-16 18:00:28,815 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-16 18:00:28,884 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 14 mappings in 'requestMappingHandlerMapping'
+2023-11-16 18:00:28,903 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-16 18:00:29,057 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-16 18:00:29,086 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 18:00:32,745 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-16 18:00:32,747 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-11-16 18:00:32,747 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-11-16 18:00:32,747 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-11-16 18:00:32,756 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4a492274
+2023-11-16 18:00:32,757 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2d1c2f9d
+2023-11-16 18:00:32,757 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-16 18:00:32,757 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 12 ms
+2023-11-16 18:00:32,770 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:00:32,776 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:00:32,895 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:00:33,921 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@7e7c6d40]
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.attoparser.ParseException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:567)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:399)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:115)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+2023-11-16 18:00:33,925 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+2023-11-16 18:00:33,940 DEBUG [org.springframework.web.servlet.DispatcherServlet] - "ERROR" dispatch for GET "/error", parameters={}
+2023-11-16 18:00:33,943 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-16 18:00:33,982 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-16 18:00:34,021 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Exiting from "ERROR" dispatch, status 500
+2023-11-16 18:00:34,063 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:00:34,062 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:00:34,076 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:00:34,076 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:00:34,091 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:00:34,091 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:00:36,510 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:00:36,512 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:00:36,541 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:00:36,589 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@1b6ea090]
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.attoparser.ParseException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:567)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:399)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:115)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+2023-11-16 18:00:36,589 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+2023-11-16 18:00:36,590 DEBUG [org.springframework.web.servlet.DispatcherServlet] - "ERROR" dispatch for GET "/error", parameters={}
+2023-11-16 18:00:36,591 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-16 18:00:36,596 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-16 18:00:36,612 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Exiting from "ERROR" dispatch, status 500
+2023-11-16 18:00:36,640 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:00:36,640 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:00:36,645 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:00:36,645 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:00:36,647 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:00:36,647 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:40,098 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:01:40,099 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:01:40,123 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:01:40,156 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@8b9ac87]
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.attoparser.ParseException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:567)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:399)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:115)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+2023-11-16 18:01:40,159 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+2023-11-16 18:01:40,159 DEBUG [org.springframework.web.servlet.DispatcherServlet] - "ERROR" dispatch for GET "/error", parameters={}
+2023-11-16 18:01:40,160 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-16 18:01:40,169 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-16 18:01:40,187 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Exiting from "ERROR" dispatch, status 500
+2023-11-16 18:01:40,215 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:01:40,215 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:01:40,217 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:01:40,217 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:01:40,221 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:40,223 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:42,158 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/courses", parameters={}
+2023-11-16 18:01:42,161 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.CourseController#home(Model)
+2023-11-16 18:01:42,213 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:01:42,316 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:42,365 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:01:42,367 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:01:42,370 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:01:42,373 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:01:42,374 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:42,376 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:42,843 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:01:42,845 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:01:42,867 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:01:42,905 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Error rendering view [org.thymeleaf.spring6.view.ThymeleafView@612f2105]
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.attoparser.ParseException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [fragments/studentsList], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "students" - line 11, col 10)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:567)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:399)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:115)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+2023-11-16 18:01:42,905 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Failed to complete request: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/students.html]")
+2023-11-16 18:01:42,906 DEBUG [org.springframework.web.servlet.DispatcherServlet] - "ERROR" dispatch for GET "/error", parameters={}
+2023-11-16 18:01:42,907 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-16 18:01:42,915 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-16 18:01:42,928 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Exiting from "ERROR" dispatch, status 500
+2023-11-16 18:01:42,961 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:01:42,962 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:01:42,964 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:01:42,967 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:01:42,968 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:01:42,970 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:16,267 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 18:02:16,284 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-11-16 18:02:21,818 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 18:02:22,391 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-16 18:02:22,434 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-11-16 18:02:22,907 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-11-16 18:02:22,942 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1119 ms
+2023-11-16 18:02:23,334 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-11-16 18:02:23,403 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-16 18:02:23,404 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-11-16 18:02:23,820 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-16 18:02:25,030 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 18:02:25,447 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-16 18:02:25,854 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-16 18:02:25,943 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-16 18:02:25,999 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 14 mappings in 'requestMappingHandlerMapping'
+2023-11-16 18:02:26,017 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-16 18:02:26,183 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-16 18:02:26,372 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 18:02:27,273 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-16 18:02:27,274 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-11-16 18:02:27,274 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-11-16 18:02:27,274 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-11-16 18:02:27,276 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2bf291c9
+2023-11-16 18:02:27,276 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1cb5a596
+2023-11-16 18:02:27,276 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-16 18:02:27,276 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2023-11-16 18:02:27,289 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:02:27,297 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:02:27,456 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:02:28,294 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:28,329 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:02:28,329 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:02:28,335 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:28,335 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:28,347 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:28,349 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:31,321 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students", parameters={masked}
+2023-11-16 18:02:31,322 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#filterByName(String)
+2023-11-16 18:02:31,354 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-11-16 18:02:31,356 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-11-16 18:02:31,364 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:02:31,364 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:02:31,398 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:02:31,439 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:31,461 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:02:31,462 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:02:31,465 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:31,465 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:31,469 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:31,470 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:36,626 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students/create", parameters={masked}
+2023-11-16 18:02:36,630 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#create(Student, Errors)
+2023-11-16 18:02:36,705 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:02:36,754 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:36,795 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:02:36,796 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:02:36,796 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:36,796 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:36,801 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:36,801 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:38,333 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students/create", parameters={masked}
+2023-11-16 18:02:38,335 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#create(Student, Errors)
+2023-11-16 18:02:38,434 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-11-16 18:02:38,435 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-11-16 18:02:38,441 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:02:38,442 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:02:38,449 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:02:38,479 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:38,516 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:02:38,516 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:02:38,521 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:38,521 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:38,525 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:38,525 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:44,364 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students/create", parameters={masked}
+2023-11-16 18:02:44,365 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#create(Student, Errors)
+2023-11-16 18:02:44,398 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-11-16 18:02:44,398 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-11-16 18:02:44,408 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:02:44,408 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:02:44,420 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:02:44,449 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:44,471 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:02:44,471 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:02:44,472 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:44,472 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:44,476 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:44,476 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:49,152 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students", parameters={masked}
+2023-11-16 18:02:49,158 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#filterByName(String)
+2023-11-16 18:02:49,180 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-11-16 18:02:49,181 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-11-16 18:02:49,192 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:02:49,193 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:02:49,206 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:02:49,247 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:49,268 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:02:49,269 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:02:49,271 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:49,271 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:02:49,273 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:02:49,275 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:03:08,698 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students", parameters={masked}
+2023-11-16 18:03:08,707 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#filterByName(String)
+2023-11-16 18:03:08,741 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-11-16 18:03:08,742 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-11-16 18:03:08,753 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:03:08,754 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:03:08,767 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:03:08,813 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:03:08,849 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:03:08,849 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:03:08,850 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:03:08,850 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:03:08,853 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:03:08,855 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:03:48,171 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 18:03:48,224 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-11-16 18:03:54,290 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 18:03:54,826 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-16 18:03:54,864 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2023-11-16 18:03:55,335 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-11-16 18:03:55,374 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1080 ms
+2023-11-16 18:03:55,669 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-11-16 18:03:55,726 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-16 18:03:55,727 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-11-16 18:03:56,043 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-16 18:03:56,907 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16 18:03:57,226 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-16 18:03:57,671 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-16 18:03:57,770 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-16 18:03:57,839 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 14 mappings in 'requestMappingHandlerMapping'
+2023-11-16 18:03:57,859 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-16 18:03:58,172 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-16 18:03:58,436 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 18:04:00,093 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-16 18:04:00,093 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-11-16 18:04:00,093 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-11-16 18:04:00,093 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-11-16 18:04:00,095 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b5ea0d6
+2023-11-16 18:04:00,095 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@21a5bbad
+2023-11-16 18:04:00,095 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-16 18:04:00,095 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2023-11-16 18:04:00,108 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:04:00,116 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:04:00,250 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:04:01,363 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:04:01,404 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:04:01,404 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:04:01,414 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:04:01,414 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:04:01,431 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:04:01,436 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:04:04,624 DEBUG [org.springframework.web.servlet.DispatcherServlet] - POST "/students/create", parameters={masked}
+2023-11-16 18:04:04,626 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#create(Student, Errors)
+2023-11-16 18:04:04,880 DEBUG [org.springframework.web.servlet.view.RedirectView] - View name 'redirect:', model {}
+2023-11-16 18:04:04,881 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 302 FOUND
+2023-11-16 18:04:04,891 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/students", parameters={}
+2023-11-16 18:04:04,892 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.StudentController#home(Model)
+2023-11-16 18:04:04,897 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-16 18:04:04,940 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:04:04,999 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-16 18:04:04,999 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-16 18:04:05,000 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:04:05,000 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-16 18:04:05,004 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-16 18:04:05,004 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK

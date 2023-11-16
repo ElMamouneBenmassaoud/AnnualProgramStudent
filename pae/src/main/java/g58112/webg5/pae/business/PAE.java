@@ -68,4 +68,8 @@ public class PAE {
         course.getStudents().add(student);
         student.getCourses().add(course);
     }
+
+    public Iterable<Student> getStudentsNameContaining(String name) throws Exception{
+        return studentService.getStudentsNameContaining(name);
+    }
 }

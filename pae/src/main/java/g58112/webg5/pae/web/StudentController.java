@@ -17,16 +17,30 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 public class StudentController {
 
+    private static boolean WITH_FILTER = false;
+    private static String FILTERED_NAME = "";
+
     @Autowired
     private PAE pae;
     @ModelAttribute(name = "students")
     public Iterable<Student> students(Model model) throws Exception {
-        return pae.getStudents();
+        return WITH_FILTER ? pae.getStudentsNameContaining(FILTERED_NAME) : pae.getStudents();
     }
 
     @ModelAttribute(name = "student")
     public Student student(Model model) {
         return new Student();
+    }
+
+    @PostMapping("")
+    public String filterByName(@RequestParam("name") String name) {
+        try {
+            FILTERED_NAME = name;
+            WITH_FILTER = true;
+            return "redirect:/students";
+        } catch (IllegalArgumentException e) {
+            return "students";
+        }
     }
 
     @GetMapping("")
