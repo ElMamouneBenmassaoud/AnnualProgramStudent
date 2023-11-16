@@ -3977,3 +3977,145 @@
 2023-11-14 13:40:16,090 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
 2023-11-14 13:40:16,094 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
 2023-11-14 13:40:16,096 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 16:26:34,021 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 16:26:34,027 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 16:26:34,027 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 16:26:34,027 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 16:26:34,036 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-16 16:26:34,040 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-16 16:26:34,043 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-16 16:26:34,045 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-16 16:26:34,049 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-16 16:26:34,057 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-16 16:30:37,603 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 16:30:37,623 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:02:52,146 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:02:52,158 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:02:54,161 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:02:54,180 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:03:00,651 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:03:00,658 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:03:11,237 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:03:11,243 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:03:11,664 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:03:11,724 DEBUG [org.hibernate.SQL] - select next value for matricule_seq
+2023-11-16 17:03:11,772 DEBUG [org.hibernate.SQL] - insert into student (gender,name,section,id) values (?,?,?,?)
+2023-11-16 17:03:11,836 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:03:11,839 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:23:29,955 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 17:23:29,960 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 17:23:29,960 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 17:23:29,960 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 17:23:42,238 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 17:23:42,247 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 17:23:42,247 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 17:23:42,248 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 17:23:42,258 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-16 17:23:42,263 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-16 17:23:42,268 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-16 17:23:42,270 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-16 17:23:42,275 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-16 17:23:42,280 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-16 17:23:53,156 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:23:53,181 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:25:52,106 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 17:25:52,117 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 17:25:52,119 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 17:25:52,121 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 17:26:02,342 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 17:26:02,356 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 17:26:02,356 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 17:26:02,356 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 17:26:02,365 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-16 17:26:02,369 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-16 17:26:02,380 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-16 17:26:02,381 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-16 17:26:02,385 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-16 17:26:02,389 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-16 17:26:09,703 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0 where c1_0.credits>=?
+2023-11-16 17:26:09,727 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0 where c1_0.credits>=?
+2023-11-16 17:26:09,744 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:26:09,749 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:26:42,479 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 17:26:42,486 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 17:26:42,486 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 17:26:42,487 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 17:51:02,870 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-16 17:51:02,880 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-16 17:51:02,880 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-16 17:51:02,880 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-16 17:51:02,889 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-16 17:51:02,896 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-16 17:51:02,900 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-16 17:51:02,902 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-16 17:51:02,907 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-16 17:51:02,911 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-16 17:51:05,484 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:05,704 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:05,751 DEBUG [org.hibernate.SQL] - select s1_0.name,sum(c1_1.credits) from student s1_0 join (course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id) on s1_0.id=c1_0.students_id group by s1_0.name
+2023-11-16 17:51:05,882 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:05,891 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:05,898 DEBUG [org.hibernate.SQL] - select s1_0.name,sum(c1_1.credits) from student s1_0 join (course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id) on s1_0.id=c1_0.students_id group by s1_0.name
+2023-11-16 17:51:28,220 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:28,228 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:28,300 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:28,310 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:28,315 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:28,378 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:30,903 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:30,917 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:30,931 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:30,935 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0 where s1_0.id=?
+2023-11-16 17:51:30,940 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:30,944 DEBUG [org.hibernate.SQL] - select s1_0.courses_id,s1_1.id,s1_1.gender,s1_1.name,s1_1.section from course_students s1_0 join student s1_1 on s1_1.id=s1_0.students_id where s1_0.courses_id=?
+2023-11-16 17:51:30,945 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:30,946 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:30,964 DEBUG [org.hibernate.SQL] - insert into course_students (courses_id,students_id) values (?,?)
+2023-11-16 17:51:30,983 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:30,985 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:30,986 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:30,989 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:30,992 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:31,021 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:33,314 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:33,323 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:33,334 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:33,335 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0 where s1_0.id=?
+2023-11-16 17:51:33,338 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:33,342 DEBUG [org.hibernate.SQL] - select s1_0.courses_id,s1_1.id,s1_1.gender,s1_1.name,s1_1.section from course_students s1_0 join student s1_1 on s1_1.id=s1_0.students_id where s1_0.courses_id=?
+2023-11-16 17:51:33,344 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:33,346 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:33,348 DEBUG [org.hibernate.SQL] - insert into course_students (courses_id,students_id) values (?,?)
+2023-11-16 17:51:33,364 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:33,367 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:33,368 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:33,370 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:33,374 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:33,401 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:34,547 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:34,560 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:34,565 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:34,566 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0 where s1_0.id=?
+2023-11-16 17:51:34,571 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:34,574 DEBUG [org.hibernate.SQL] - select s1_0.courses_id,s1_1.id,s1_1.gender,s1_1.name,s1_1.section from course_students s1_0 join student s1_1 on s1_1.id=s1_0.students_id where s1_0.courses_id=?
+2023-11-16 17:51:34,575 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:34,580 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:34,584 DEBUG [org.hibernate.SQL] - insert into course_students (courses_id,students_id) values (?,?)
+2023-11-16 17:51:34,599 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:34,602 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:34,604 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:34,606 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:34,609 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:34,635 DEBUG [org.hibernate.SQL] - select c1_0.students_id,c1_1.id,c1_1.credits,c1_1.title from course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id where c1_0.students_id=?
+2023-11-16 17:51:35,390 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:35,402 DEBUG [org.hibernate.SQL] - select c1_0.id,c1_0.credits,c1_0.title from course c1_0
+2023-11-16 17:51:35,406 DEBUG [org.hibernate.SQL] - select count(*) from student s1_0 where s1_0.id=?
+2023-11-16 17:51:35,408 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0 where s1_0.id=?
+2023-11-16 17:51:35,413 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:35,416 DEBUG [org.hibernate.SQL] - select s1_0.courses_id,s1_1.id,s1_1.gender,s1_1.name,s1_1.section from course_students s1_0 join student s1_1 on s1_1.id=s1_0.students_id where s1_0.courses_id=?
+2023-11-16 17:51:35,424 DEBUG [org.hibernate.SQL] - select count(*) from course c1_0 where c1_0.id=?
+2023-11-16 17:51:35,428 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:35,429 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:39,632 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:39,652 DEBUG [org.hibernate.SQL] - select s1_0.id,s1_0.gender,s1_0.name,s1_0.section from student s1_0
+2023-11-16 17:51:39,662 DEBUG [org.hibernate.SQL] - select s1_0.name,sum(c1_1.credits) from student s1_0 join (course_students c1_0 join course c1_1 on c1_1.id=c1_0.courses_id) on s1_0.id=c1_0.students_id group by s1_0.name

@@ -67,8 +67,5 @@ public class PAE {
         System.out.println("enrollStudent private");
         course.getStudents().add(student);
         student.getCourses().add(course);
-
     }
-
-
 }
