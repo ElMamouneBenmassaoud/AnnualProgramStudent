@@ -1,0 +1,18 @@
+2023-11-18 16:23:00,347 DEBUG [org.hibernate.SQL] - alter table course_students drop foreign key if exists FK532dg5ikp3dvbrbiiqefdoe6m
+2023-11-18 16:23:00,350 DEBUG [org.hibernate.SQL] - alter table course_students drop foreign key if exists FKh6irfl8rj4jgb3xrlyxsr2bdk
+2023-11-18 16:23:00,351 DEBUG [org.hibernate.SQL] - drop table if exists course
+2023-11-18 16:23:00,355 DEBUG [org.hibernate.SQL] - drop table if exists course_students
+2023-11-18 16:23:00,356 DEBUG [org.hibernate.SQL] - drop table if exists student
+2023-11-18 16:23:00,357 DEBUG [org.hibernate.SQL] - drop sequence matricule_seq
+2023-11-18 16:23:00,360 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-18 16:23:00,372 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id)) engine=InnoDB
+2023-11-18 16:23:00,380 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id)) engine=InnoDB
+2023-11-18 16:23:00,387 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender enum ('FEMALE','MALE') not null, section enum ('GESTION','INDUSTRIELLE','RESEAU') not null, primary key (id)) engine=InnoDB
+2023-11-18 16:23:00,394 DEBUG [org.hibernate.SQL] - alter table course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student (id)
+2023-11-18 16:23:00,413 DEBUG [org.hibernate.SQL] - alter table course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course (id)
+2023-11-18 16:23:12,344 DEBUG [org.hibernate.SQL] - alter table course_students drop foreign key if exists FK532dg5ikp3dvbrbiiqefdoe6m
+2023-11-18 16:23:12,356 DEBUG [org.hibernate.SQL] - alter table course_students drop foreign key if exists FKh6irfl8rj4jgb3xrlyxsr2bdk
+2023-11-18 16:23:12,370 DEBUG [org.hibernate.SQL] - drop table if exists course
+2023-11-18 16:23:12,377 DEBUG [org.hibernate.SQL] - drop table if exists course_students
+2023-11-18 16:23:12,380 DEBUG [org.hibernate.SQL] - drop table if exists student
+2023-11-18 16:23:12,381 DEBUG [org.hibernate.SQL] - drop sequence matricule_seq
