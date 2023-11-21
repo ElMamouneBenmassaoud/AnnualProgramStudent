@@ -22,16 +22,22 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Course {
-    @NotBlank @NotNull @Size(min=4 , max=10, message = "Le nombre de caractère doit etre compris entre 4 et 10 caractères !") 
+    @NotBlank @Size(min=4 , max=10, message = "Le nombre de caractère doit etre compris entre 4 et 10 caractères !")
     @Pattern(regexp = "^[a-zA-Z][a-zA-Z0-9]*$",message="Le sigle est composé de chiffres et de lettres et doit commencer par une lettre.")
     @Id
     private String id;
 
-    @NotBlank @NotNull @Size(max=100)
+    @NotBlank @Size(max=100)
     private String title;
 
     @NotNull @Positive
     private int credits;
+
+    public Course(String id, String title, int credits) {
+        this.id = id;
+        this.title = title;
+        this.credits = credits;
+    }
 
     @ManyToMany
     @JsonIgnore

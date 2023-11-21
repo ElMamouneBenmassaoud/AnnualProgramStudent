@@ -40,6 +40,13 @@ public class Student {
     @ManyToMany(mappedBy = "students")
     @JsonIgnore
     private Set<Course> courses;
+
+    public Student(String name, Gender gender, Section section) {
+        this.name = name;
+        this.gender = gender;
+        this.section = section;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
