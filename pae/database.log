@@ -82,3 +82,6 @@
 2023-11-22 03:45:19,383 INFO  [g58112.webg5.pae.database.StudentDbTest] - Starting StudentDbTest using Java 20.0.1 with PID 24066 (started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
 2023-11-22 03:45:19,386 INFO  [g58112.webg5.pae.database.StudentDbTest] - No active profile set, falling back to 1 default profile: "default"
 2023-11-22 03:45:23,578 INFO  [g58112.webg5.pae.database.StudentDbTest] - Started StudentDbTest in 4.615 seconds (process running for 5.989)
+2023-11-22 03:47:12,042 INFO  [g58112.webg5.pae.database.StudentDbTest] - Starting StudentDbTest using Java 20.0.1 with PID 24151 (started by mamounbenmassaoud in /Users/mamounbenmassaoud/Documents/ESI/Bloc3Q1/WEBG5/webg5_2023_em_58112/pae)
+2023-11-22 03:47:12,043 INFO  [g58112.webg5.pae.database.StudentDbTest] - No active profile set, falling back to 1 default profile: "default"
+2023-11-22 03:47:16,290 INFO  [g58112.webg5.pae.database.StudentDbTest] - Started StudentDbTest in 4.67 seconds (process running for 6.263)
