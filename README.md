@@ -1,7 +1,8 @@
 # webg5
 
 ## ToDo
-- Chapitre : 16.7 (Paresseux ou gourmand ?)
+- Chapitre : 19 (Tester Rest et Web)
+- Chapitre : 20 (L’internationalisation)
 
 ## Semaine 1 : <sub>_19/09/2023_</sub>
 - Chapitres : 3-4-5-6 (VS Codium, Trace, Lombok, Spring)
@@ -27,5 +28,11 @@
 - Tester les différentes associations
 - Chapitre : 16 Les entités
 
+## Semaine 8 : <sub>_13/11/2023_</sub>
+- Chapitre : 17 Requêtes avancées (JPQL, @Query)
+- Chapitre : 18 Configurer le SGBD (Maria DB)
+
+## Semaine 9 : <sub>_13/11/2023_</sub>
+- Chapitre : 19 Les tests (Entity, Database, Business, )
 
  
