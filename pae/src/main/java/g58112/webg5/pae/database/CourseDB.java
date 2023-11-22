@@ -24,5 +24,5 @@ public interface CourseDB extends CrudRepository<Course, String> {
      * @param title the title to compare
      * @return a list of courses
      */
-    public String findByTitleContainingIgnoreCase(String title);
+    public List<Course> findByTitleContainingIgnoreCase(String title);
 }
