@@ -32,7 +32,7 @@
 - Chapitre : 17 Requêtes avancées (JPQL, @Query)
 - Chapitre : 18 Configurer le SGBD (Maria DB)
 
-## Semaine 9 : <sub>_13/11/2023_</sub>
+## Semaine 9 : <sub>_20/11/2023_</sub>
 - Chapitre : 19 Les tests (Entity, Database, Business, )
 
  
