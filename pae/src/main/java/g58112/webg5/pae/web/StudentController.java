@@ -50,8 +50,13 @@ public class StudentController {
 
     @GetMapping("/{studentId}/details")
     public String detail(@PathVariable int studentId, Model model) throws Exception {
-        model.addAttribute("student", pae.getStudent(studentId));
-        model.addAttribute("courses", pae.getCourses());
+        try {
+            model.addAttribute("student", pae.getStudent(studentId));
+            model.addAttribute("courses", pae.getCourses());
+        } catch (Exception e) {
+            log.error("Error while getting student details : " + e.getMessage());
+            return "error";
+        }
         return "student";
     }
 
