@@ -5,6 +5,7 @@ import java.util.NoSuchElementException;
 
 import java.util.Optional;
 
+import g58112.webg5.pae.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,31 +29,48 @@ public class PaeRestController {
     @Autowired
     private PAE pae;
 
-     /**
+    /**
      * REST API to get every courses in the PAE
+     *
      * @return json object with all courses
      */
     @GetMapping("/courses")
-    public Iterable<Course>  courses() throws Exception {
+    public Iterable<Course> courses() throws Exception {
         return pae.getCourses();
+    }
+
+    @GetMapping("/students")
+    public Iterable<Student> students() throws Exception {
+        return pae.getStudents();
+    }
+
+    @GetMapping("/students/{id}")
+    public Student students(@PathVariable("id") int id) throws Exception {
+        try {
+            return pae.getStudent(id);
+        } catch (Exception e) {
+            throw new NoSuchElementException();
+        }
     }
 
     /**
      * REST API to search a course with his id
-     * @param courseId course's id
+     *
+     * @param id course's id
      * @return json object with the chosen course
      */
-    @GetMapping("/course/{id}")
-    public Course courses(@PathVariable("id") String id){
-        try{
+    @GetMapping("/courses/{id}")
+    public Course courses(@PathVariable("id") String id) {
+        try {
             return pae.getCourse(id);
-        }catch(Exception e){
+        } catch (Exception e) {
             throw new NoSuchElementException();
         }
     }
 
     /**
      * For all routes which do not exist in the app
+     *
      * @return an error 404 using http
      */
     @GetMapping("/**")

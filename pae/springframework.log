@@ -675,3 +675,204 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2023-11-22 04:30:17,450 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
 2023-11-22 04:30:17,803 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Closing org.springframework.web.context.support.GenericWebApplicationContext@60afd40d, started on Wed Nov 22 04:30:11 CET 2023
 2023-11-22 04:30:17,809 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 16:18:51,263 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-23 16:18:52,002 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-23 16:18:52,051 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2023-11-23 16:18:52,628 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-11-23 16:18:52,696 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1429 ms
+2023-11-23 16:18:53,062 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-11-23 16:18:53,146 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:18:53,147 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-11-23 16:18:53,536 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-23 16:18:54,719 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 16:18:55,265 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-23 16:18:55,861 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-23 16:18:55,971 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:18:56,046 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 14 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:18:56,064 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:18:56,242 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-23 16:18:56,271 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-23 16:19:04,440 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-23 16:19:04,446 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-11-23 16:19:04,447 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-11-23 16:19:04,447 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-11-23 16:19:04,459 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1f1c5cff
+2023-11-23 16:19:04,459 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@607d00a9
+2023-11-23 16:19:04,460 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-23 16:19:04,460 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 16 ms
+2023-11-23 16:19:04,476 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/", parameters={}
+2023-11-23 16:19:04,488 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.web.PaeController#home()
+2023-11-23 16:19:04,540 DEBUG [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-11-23 16:19:05,849 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:19:06,179 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/img/logo-he2b.png", parameters={}
+2023-11-23 16:19:06,179 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-23 16:19:06,194 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-23 16:19:06,194 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-23 16:19:06,220 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:19:06,221 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:19:06,299 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/css/style.css", parameters={}
+2023-11-23 16:19:06,303 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-23 16:19:06,306 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:19:06,458 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/favicon.ico", parameters={}
+2023-11-23 16:19:06,459 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-23 16:19:06,461 DEBUG [org.springframework.web.servlet.resource.ResourceHttpRequestHandler] - Resource not found
+2023-11-23 16:19:06,461 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-11-23 16:19:06,464 DEBUG [org.springframework.web.servlet.DispatcherServlet] - "ERROR" dispatch for GET "/error", parameters={}
+2023-11-23 16:19:06,466 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-23 16:19:06,502 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2023-11-23 16:19:06,505 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Writing [{timestamp=Thu Nov 23 16:19:06 CET 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-11-23 16:19:06,534 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Exiting from "ERROR" dispatch, status 404
+2023-11-23 16:19:11,594 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses", parameters={}
+2023-11-23 16:19:11,597 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#courses()
+2023-11-23 16:19:11,755 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-11-23 16:19:11,756 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [[Course{id='ORGG5', title='Organisation et entreprise', credits=3}, Course{id='PRJG5', title='Gestio (truncated)...]
+2023-11-23 16:19:11,766 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:20:30,191 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses/ERPG5", parameters={}
+2023-11-23 16:20:30,203 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#error404()
+2023-11-23 16:20:30,222 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2023-11-23 16:20:30,222 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Nothing to write: null body
+2023-11-23 16:20:30,222 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-11-23 16:20:32,929 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses/", parameters={}
+2023-11-23 16:20:32,934 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#error404()
+2023-11-23 16:20:32,952 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2023-11-23 16:20:32,953 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Nothing to write: null body
+2023-11-23 16:20:32,955 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-11-23 16:20:41,663 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses", parameters={}
+2023-11-23 16:20:41,665 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#courses()
+2023-11-23 16:20:41,689 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-11-23 16:20:41,689 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [[Course{id='ORGG5', title='Organisation et entreprise', credits=3}, Course{id='PRJG5', title='Gestio (truncated)...]
+2023-11-23 16:20:41,691 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:20:53,691 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses/ORGG5", parameters={}
+2023-11-23 16:20:53,694 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#error404()
+2023-11-23 16:20:53,700 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2023-11-23 16:20:53,700 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Nothing to write: null body
+2023-11-23 16:20:53,700 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-11-23 16:20:58,645 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses/ORGG5/", parameters={}
+2023-11-23 16:20:58,654 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#error404()
+2023-11-23 16:20:58,667 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2023-11-23 16:20:58,667 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Nothing to write: null body
+2023-11-23 16:20:58,669 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-11-23 16:21:07,498 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/course/ORGG5", parameters={}
+2023-11-23 16:21:07,500 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#courses(String)
+2023-11-23 16:21:07,609 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-11-23 16:21:07,609 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Course{id='ORGG5', title='Organisation et entreprise', credits=3}]
+2023-11-23 16:21:07,611 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:24:39,210 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 16:24:39,232 WARN  [org.springframework.beans.factory.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2023-11-23 16:25:13,135 INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-23 16:25:13,989 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-23 16:25:14,031 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2023-11-23 16:25:14,522 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-11-23 16:25:14,569 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1411 ms
+2023-11-23 16:25:14,949 INFO  [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/db'. Database available at 'jdbc:h2:mem:mamsDb'
+2023-11-23 16:25:15,023 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:25:15,024 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/db/*]
+2023-11-23 16:25:15,363 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-23 16:25:16,161 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 16:25:16,456 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-23 16:25:16,828 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-23 16:25:16,913 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:25:16,973 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 16 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:25:16,990 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:25:17,158 INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-23 16:25:17,186 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-23 16:26:00,898 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-23 16:26:00,899 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected StandardServletMultipartResolver
+2023-11-23 16:26:00,899 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected AcceptHeaderLocaleResolver
+2023-11-23 16:26:00,899 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected FixedThemeResolver
+2023-11-23 16:26:00,901 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78009ba
+2023-11-23 16:26:00,901 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@552ea0e1
+2023-11-23 16:26:00,902 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-23 16:26:00,902 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+2023-11-23 16:26:00,911 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/course/ORGG5", parameters={}
+2023-11-23 16:26:01,055 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#error404()
+2023-11-23 16:26:01,168 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2023-11-23 16:26:01,169 DEBUG [org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor] - Nothing to write: null body
+2023-11-23 16:26:01,173 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 404 NOT_FOUND
+2023-11-23 16:26:06,873 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/courses", parameters={}
+2023-11-23 16:26:06,875 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#courses()
+2023-11-23 16:26:07,039 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-11-23 16:26:07,041 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [[Course{id='ORGG5', title='Organisation et entreprise', credits=3}, Course{id='PRJG5', title='Gestio (truncated)...]
+2023-11-23 16:26:07,081 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:26:10,125 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/students", parameters={}
+2023-11-23 16:26:10,128 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#students()
+2023-11-23 16:26:10,154 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-11-23 16:26:10,154 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [[Student{id=1, name='Mamoun El Benmassoud', gender=MALE, section=GESTION}]]
+2023-11-23 16:26:10,184 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:26:14,445 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/api/students/1", parameters={}
+2023-11-23 16:26:14,450 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#students(int)
+2023-11-23 16:26:14,556 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2023-11-23 16:26:14,556 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Student{id=1, name='Mamoun El Benmassoud', gender=MALE, section=GESTION}]
+2023-11-23 16:26:14,557 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2023-11-23 16:32:02,605 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [g58112.webg5.pae.rest.PaeRestTest]: PaeRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-23 16:32:02,779 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration g58112.webg5.pae.PaeApplication for test class g58112.webg5.pae.rest.PaeRestTest
+2023-11-23 16:32:04,107 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9fecdf1
+2023-11-23 16:32:07,082 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:32:07,240 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 16 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:32:07,276 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:32:07,467 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:32:07,467 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: 
+2023-11-23 16:32:07,482 INFO  [org.springframework.boot.test.mock.web.SpringBootMockServletContext] - Initializing Spring TestDispatcherServlet ''
+2023-11-23 16:32:07,482 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Initializing Servlet ''
+2023-11-23 16:32:07,489 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Completed initialization in 4 ms
+2023-11-23 16:32:07,613 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#courses()
+2023-11-23 16:32:07,656 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-11-23 16:32:07,657 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [[]]
+2023-11-23 16:32:07,697 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Closing org.springframework.web.context.support.GenericWebApplicationContext@9fecdf1, started on Thu Nov 23 16:32:04 CET 2023
+2023-11-23 16:44:27,147 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [g58112.webg5.pae.rest.PaeRestTest]: PaeRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-23 16:44:27,354 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration g58112.webg5.pae.PaeApplication for test class g58112.webg5.pae.rest.PaeRestTest
+2023-11-23 16:44:28,802 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3b809711
+2023-11-23 16:44:31,812 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:44:31,971 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 16 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:44:32,018 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:44:32,217 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:44:32,217 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: 
+2023-11-23 16:44:32,252 INFO  [org.springframework.boot.test.mock.web.SpringBootMockServletContext] - Initializing Spring TestDispatcherServlet ''
+2023-11-23 16:44:32,252 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Initializing Servlet ''
+2023-11-23 16:44:32,256 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Completed initialization in 1 ms
+2023-11-23 16:44:32,415 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#students(int)
+2023-11-23 16:44:32,520 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-11-23 16:44:32,527 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Student{id=0, name='Mamoun', gender=MALE, section=GESTION}]
+2023-11-23 16:44:32,606 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Closing org.springframework.web.context.support.GenericWebApplicationContext@3b809711, started on Thu Nov 23 16:44:28 CET 2023
+2023-11-23 16:45:06,392 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [g58112.webg5.pae.rest.PaeRestTest]: PaeRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-23 16:45:06,582 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration g58112.webg5.pae.PaeApplication for test class g58112.webg5.pae.rest.PaeRestTest
+2023-11-23 16:45:07,676 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22175d4f
+2023-11-23 16:45:11,205 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:45:11,384 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 16 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:45:11,423 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:45:11,645 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:45:11,645 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: 
+2023-11-23 16:45:11,662 INFO  [org.springframework.boot.test.mock.web.SpringBootMockServletContext] - Initializing Spring TestDispatcherServlet ''
+2023-11-23 16:45:11,662 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Initializing Servlet ''
+2023-11-23 16:45:11,666 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Completed initialization in 2 ms
+2023-11-23 16:45:11,826 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#students(int)
+2023-11-23 16:45:11,938 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Closing org.springframework.web.context.support.GenericWebApplicationContext@22175d4f, started on Thu Nov 23 16:45:07 CET 2023
+2023-11-23 16:45:39,530 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [g58112.webg5.pae.rest.PaeRestTest]: PaeRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-23 16:45:39,710 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration g58112.webg5.pae.PaeApplication for test class g58112.webg5.pae.rest.PaeRestTest
+2023-11-23 16:45:40,734 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22175d4f
+2023-11-23 16:45:44,355 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:45:44,514 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 16 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:45:44,557 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:45:44,767 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:45:44,768 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: 
+2023-11-23 16:45:44,784 INFO  [org.springframework.boot.test.mock.web.SpringBootMockServletContext] - Initializing Spring TestDispatcherServlet ''
+2023-11-23 16:45:44,784 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Initializing Servlet ''
+2023-11-23 16:45:44,790 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Completed initialization in 4 ms
+2023-11-23 16:45:44,947 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#students(int)
+2023-11-23 16:45:45,032 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Closing org.springframework.web.context.support.GenericWebApplicationContext@22175d4f, started on Thu Nov 23 16:45:40 CET 2023
+2023-11-23 16:48:00,423 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [g58112.webg5.pae.rest.PaeRestTest]: PaeRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-23 16:48:00,603 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration g58112.webg5.pae.PaeApplication for test class g58112.webg5.pae.rest.PaeRestTest
+2023-11-23 16:48:01,948 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22175d4f
+2023-11-23 16:48:04,938 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 16:48:05,085 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 16 mappings in 'requestMappingHandlerMapping'
+2023-11-23 16:48:05,118 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 16:48:05,303 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-11-23 16:48:05,303 DEBUG [org.springframework.boot.web.servlet.ServletContextInitializerBeans] - Mapping servlets: 
+2023-11-23 16:48:05,324 INFO  [org.springframework.boot.test.mock.web.SpringBootMockServletContext] - Initializing Spring TestDispatcherServlet ''
+2023-11-23 16:48:05,324 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Initializing Servlet ''
+2023-11-23 16:48:05,329 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Completed initialization in 3 ms
+2023-11-23 16:48:05,495 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to g58112.webg5.pae.rest.PaeRestController#courses(String)
+2023-11-23 16:48:05,655 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-11-23 16:48:05,664 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Course{id='WEBG5', title='Web', credits=5}]
+2023-11-23 16:48:05,736 DEBUG [org.springframework.web.context.support.GenericWebApplicationContext] - Closing org.springframework.web.context.support.GenericWebApplicationContext@22175d4f, started on Thu Nov 23 16:48:01 CET 2023
