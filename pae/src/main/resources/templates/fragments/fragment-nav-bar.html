@@ -14,6 +14,12 @@
                 <li class="nav-item">
                     <a href="/db">Database</a>
                 </li>
+                <li>
+                    <a th:href="${@localeService.changeTo('fr')}">Français</a>
+                </li>
+                <li>
+                    <a th:href="${@localeService.changeTo('en')}">English</a>
+                </li>
             </ul>
         </div>
     </nav>

@@ -8,15 +8,15 @@
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-    <img class="logo" th:src="@{/img/logo-he2b.png}" alt="logo he2b" height="60">
-    <header>
-        <h1>Programme annuel des étudiants</h1>
-        <h3>HE2B-ESI / WEBG5 / 58112 / 2023-2024</h3>
+<img class="logo" th:src="@{/img/logo-he2b.png}" alt="logo he2b" height="60">
+<header>
+    <h1 th:text="#{headerTitle}">Programme annuel des étudiants</h1>
+    <h3>HE2B-ESI / WEBG5 / 58112 / 2023-2024</h3>
 
-        <div th:replace="fragments/fragment-nav-bar :: fragment-nav-bar()"></div>
-    </header>
-    <main layout:fragment="content">
-        Ce contenu sera remplacé.
-    </main>
+    <div th:replace="fragments/fragment-nav-bar :: fragment-nav-bar()"></div>
+</header>
+<main layout:fragment="content">
+    Ce contenu sera remplacé.
+</main>
 </body>
 </html>
