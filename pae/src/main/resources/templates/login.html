@@ -1,6 +1,28 @@
-<h1>Veuillez vous identifier</h1>
-<form method="POST" th:action="@{/login}">
-    <input type="text" placeholder="Login..." name="username">
-    <input type="password" placeholder="Mot de passe..." name="password">
-    <button type="submit">Login</button>
-</form>
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>PAE Accueil</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<main layout:fragment="content" class="container mt-5">
+    <div class="jumbotron" sec:authorize="!isAuthenticated()">
+        <h1>Veuillez vous identifier</h1>
+        <form method="POST" th:action="@{/login}" class="form-group">
+            <input type="text" placeholder="Login..." name="username" class="form-control mb-2">
+            <input type="password" placeholder="Mot de passe..." name="password" class="form-control mb-2">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <div class="jumbotron" sec:authorize="isAuthenticated()">
+        <h1>Vous étes déjà conneceter en tant que <span class="" sec:authentication="name">Bob</span> </h1>
+
+    </div>
+
+</main>
+</body>
+</html>

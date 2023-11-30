@@ -14,6 +14,22 @@
     <h3>HE2B-ESI / WEBG5 / 58112 / 2023-2024</h3>
 
     <div th:replace="fragments/fragment-nav-bar :: fragment-nav-bar()"></div>
+    <div sec:authorize="isAuthenticated()">
+        <div class="d-flex justify-content-end align-items-center">
+            <!-- Affiche le nom de l'utilisateur authentifié -->
+            <p sec:authentication="name" class="mb-0 mr-2">Bob</p>
+
+            <!-- Formulaire de déconnexion -->
+            <form method="POST" th:action="@{/logout}" class="mb-0">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </div>
+    <div sec:authorize="!isAuthenticated()">
+        <div class="d-flex justify-content-end align-items-center">
+            <a href="/login" class="btn btn-primary mb-0 mr-2">Login</a>
+        </div>
+    </div>
 </header>
 <main layout:fragment="content">
     Ce contenu sera remplacé.

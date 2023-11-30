@@ -10,40 +10,44 @@
 <main layout:fragment="content">
     <div th:replace="fragments/fragment-search-filtre :: searchFilter"></div><!-- Regler fragment search filtre -->
     <div th:replace="fragments/fragment-students :: fragment-students(pageTitle='Liste des étudiants', students=${students})"></div>
+    <div sec:authorize="isAuthenticated() and hasAuthority('SECRETARIAT')">
+        <h2>Ajouter un étudiant</h2>
+        <form th:action="@{/students/create}" th:object="${student}" method="post">
+            <div class="form-group col-3">
+                <label for="name">Nom :</label>
+                <input id="name" name="name" type="text" class="form-control" th:field="*{name}"
+                       th:errorclass="errorField" required/>
+                <span th:errors="*{name}" class="errorMsg">erreur</span>
+            </div>
 
-    <h2>Ajouter un étudiant</h2>
-    <form th:action="@{/students/create}" th:object="${student}" method="post">
-        <div class="form-group col-3">
-            <label for="name">Nom :</label>
-            <input id="name" name="name" type="text" class="form-control" th:field="*{name}" th:errorclass="errorField" required/>
-            <span th:errors="*{name}" class="errorMsg">erreur</span>
-        </div>
+            <div class="form-group col-3">
+                <label for="gender">Genre :</label>
+                <select id="gender" name="gender" class="form-control" th:field="*{gender}" th:errorclass="errorField">
+                    <option value="MALE">Masculin</option>
+                    <option value="FEMALE">Féminin</option>
+                </select>
+                <span th:errors="*{gender}" class="errorMsg">erreur</span>
+            </div>
 
-        <div class="form-group col-3">
-            <label for="gender">Genre :</label>
-            <select id="gender" name="gender" class="form-control" th:field="*{gender}" th:errorclass="errorField">
-                <option value="MALE">Masculin</option>
-                <option value="FEMALE">Féminin</option>
-            </select>
-            <span th:errors="*{gender}" class="errorMsg">erreur</span>
-        </div>
+            <div class="form-group col-3">
+                <label for="section">Section :</label>
+                <select id="section" name="section" class="form-control" th:field="*{section}"
+                        th:errorclass="errorField">
+                    <option value="GESTION">Gestion</option>
+                    <option value="INDUSTRIELLE">Industrielle</option>
+                    <option value="RESEAU">Réseau</option>
+                </select>
+                <span th:errors="*{section}" class="errorMsg">erreur</span>
+            </div>
 
-        <div class="form-group col-3">
-            <label for="section">Section :</label>
-            <select id="section" name="section" class="form-control" th:field="*{section}" th:errorclass="errorField">
-                <option value="GESTION">Gestion</option>
-                <option value="INDUSTRIELLE">Industrielle</option>
-                <option value="RESEAU">Réseau</option>
-            </select>
-            <span th:errors="*{section}" class="errorMsg">erreur</span>
-        </div>
+            <button type="submit" class="btn btn-primary ml-3">Ajouter</button>
 
-        <button type="submit" class="btn btn-primary ml-3">Ajouter</button>
-
-        <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
-            <p th:errors="*{global}" th:text="${error}"></p>
-        </div>
-    </form>
+            <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show mt-3"
+                 role="alert">
+                <p th:errors="*{global}" th:text="${error}"></p>
+            </div>
+        </form>
+    </div>
 </main>
 
 </body>

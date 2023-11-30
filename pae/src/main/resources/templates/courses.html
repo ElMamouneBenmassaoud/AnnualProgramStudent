@@ -10,34 +10,39 @@
 <main layout:fragment="content">
     <div th:replace="fragments/fragment-courses :: fragment-courses(pageTitle='Liste des cours', courses=${courses})"></div>
 
-    <h2>Ajouter un cours</h2>
-    <form th:action="@{/courses/create}" th:object="${course}" method="post">
+    <div sec:authorize="isAuthenticated() and hasAuthority('SECRETARIAT')">
+        <h2>Ajouter un cours</h2>
+        <form th:action="@{/courses/create}" th:object="${course}" method="post">
 
-        <div class="form-group col-3">
-            <label for="sigle">Sigle :</label>
-            <input id="sigle" name="sigle" type="text" class="form-control" th:field="*{id}" th:errorclass="errorField" required/>
-            <span th:errors="*{id}" class="errorMsg">erreur</span>
-        </div>
+            <div class="form-group col-3">
+                <label for="sigle">Sigle :</label>
+                <input id="sigle" name="sigle" type="text" class="form-control" th:field="*{id}"
+                       th:errorclass="errorField" required/>
+                <span th:errors="*{id}" class="errorMsg">erreur</span>
+            </div>
 
-        <div class="form-group col-3">
-            <label for="title">Titre :</label>
-            <input id="title" name="title" type="text" class="form-control" th:field="*{title}" th:errorclass="errorField" required/>
-            <span th:errors="*{title}" class="errorMsg">erreur</span>
-        </div>
+            <div class="form-group col-3">
+                <label for="title">Titre :</label>
+                <input id="title" name="title" type="text" class="form-control" th:field="*{title}"
+                       th:errorclass="errorField" required/>
+                <span th:errors="*{title}" class="errorMsg">erreur</span>
+            </div>
 
-        <div class="form-group col-3">
-            <label for="credits">Crédits :</label>
-            <input id="credits" name="credits" type="number" class="form-control" th:field="*{credits}" th:errorclass="errorField" required/>
-            <span th:errors="*{credits}" class="errorMsg">erreur</span>
-        </div>
+            <div class="form-group col-3">
+                <label for="credits">Crédits :</label>
+                <input id="credits" name="credits" type="number" class="form-control" th:field="*{credits}"
+                       th:errorclass="errorField" required/>
+                <span th:errors="*{credits}" class="errorMsg">erreur</span>
+            </div>
 
-        <button type="submit" class="btn btn-primary ml-3">Ajouter</button>
+            <button type="submit" class="btn btn-primary ml-3">Ajouter</button>
 
-        <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
-            <p th:errors="*{global}" th:text="${error}"></p>
-        </div>
-
-    </form>
+            <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger alert-dismissible fade show mt-3"
+                 role="alert">
+                <p th:errors="*{global}" th:text="${error}"></p>
+            </div>
+        </form>
+    </div>
 </main>
 
 </body>

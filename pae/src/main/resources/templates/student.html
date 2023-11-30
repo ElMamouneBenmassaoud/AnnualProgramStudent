@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{fragments/layout}">
+      layout:decorate="~{fragments/layout}">
 <head>
     <meta charset="UTF-8">
     <title>PAE Accueil</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<main layout:fragment ="content">
+<main layout:fragment="content">
     <div class="container">
         <h2>Student Information</h2>
         <div class="row">
@@ -61,15 +61,17 @@ layout:decorate="~{fragments/layout}">
     <br>
     <div th:replace="fragments/fragment-courses :: fragment-courses(pageTitle='Liste des cours', courses=${student.courses})"></div>
     <br>
-    <form th:action="@{/courses/enrollStudent}" th:object="${student}" method="post">
-        <input type="hidden" name="studentId" th:value="${student.id}"/>
-        <label for="courseSelect">Sélectionnez un cours :</label>
-        <select id="courseSelect" name="courseId">
-            <option value="" th:if="${courses.isEmpty()}">Aucun cours disponible</option>
-            <option th:each="course : ${courses}" th:value="${course.id}" th:text="${course.title}"></option>
-        </select>
-        <button type="submit" class="btn btn-primary">Valider</button>
-    </form>
+    <div sec:authorize="isAuthenticated() and hasAuthority('SECRETARIAT')">
+        <form th:action="@{/courses/enrollStudent}" th:object="${student}" method="post">
+            <input type="hidden" name="studentId" th:value="${student.id}"/>
+            <label for="courseSelect">Sélectionnez un cours :</label>
+            <select id="courseSelect" name="courseId">
+                <option value="" th:if="${courses.isEmpty()}">Aucun cours disponible</option>
+                <option th:each="course : ${courses}" th:value="${course.id}" th:text="${course.title}"></option>
+            </select>
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </form>
+    </div>
 </main>
 </body>
 </html>
