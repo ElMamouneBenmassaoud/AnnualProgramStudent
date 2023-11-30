@@ -12,4 +12,14 @@ insert into Course (id, title, credits)
 
 insert into Student (id, name, gender, section)
 values (1, 'Mamoun El Benmassoud', 'MALE', 'GESTION');
+/*
+INSERT INTO User (username,password,enabled) values ('aro','{noop}aro',true);
+INSERT INTO Authority (id,username,authority) values (1,'aro', 'PROF');
 
+INSERT INTO User (username,password,enabled) values ('tugba','{noop}tugba',true);
+INSERT INTO Authority (id,username,authority) values (2,'tugba', 'SEC');
+
+INSERT INTO User (username,password,enabled) values ('mamoun','{noop}mamoun',true);
+INSERT INTO Authority (id,username,authority) values (3,'mamoun', 'STUDENT');
+
+*/

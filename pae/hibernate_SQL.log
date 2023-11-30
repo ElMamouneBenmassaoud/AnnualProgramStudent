@@ -1915,3 +1915,95 @@
 2023-11-30 17:43:00,189 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
 2023-11-30 17:43:00,193 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
 2023-11-30 17:43:00,197 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-30 17:49:13,238 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 17:49:13,245 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 17:49:13,245 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 17:49:13,246 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 17:49:24,292 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 17:49:24,302 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 17:49:24,302 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 17:49:24,302 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 17:49:24,309 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-30 17:49:24,313 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-30 17:49:24,314 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-30 17:49:24,316 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-30 17:49:24,318 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-30 17:49:24,320 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-30 17:52:34,366 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 17:52:34,377 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 17:52:34,378 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 17:52:34,379 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 17:52:43,749 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 17:52:43,756 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 17:52:43,756 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 17:52:43,756 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 17:52:43,764 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-30 17:52:43,768 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-30 17:52:43,771 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-30 17:52:43,773 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-30 17:52:43,776 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-30 17:52:43,779 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-30 17:59:59,890 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 17:59:59,901 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 17:59:59,902 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 17:59:59,903 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 18:00:13,223 DEBUG [org.hibernate.SQL] - drop table if exists authority cascade 
+2023-11-30 18:00:13,230 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 18:00:13,230 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 18:00:13,230 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 18:00:13,230 DEBUG [org.hibernate.SQL] - drop table if exists user cascade 
+2023-11-30 18:00:13,233 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 18:00:13,240 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-30 18:00:13,244 DEBUG [org.hibernate.SQL] - create table authority (id bigint not null, authority varchar(255), username varchar(255), primary key (id))
+2023-11-30 18:00:13,247 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-30 18:00:13,253 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-30 18:00:13,256 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-30 18:00:13,261 DEBUG [org.hibernate.SQL] - create table user (enabled boolean not null, password varchar(255), username varchar(255) not null, primary key (username))
+2023-11-30 18:00:13,262 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-30 18:00:13,269 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-30 18:00:14,540 DEBUG [org.hibernate.SQL] - drop table if exists authority cascade 
+2023-11-30 18:00:14,542 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 18:00:14,542 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 18:00:14,543 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 18:00:14,544 DEBUG [org.hibernate.SQL] - drop table if exists user cascade 
+2023-11-30 18:00:14,545 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 18:01:19,924 DEBUG [org.hibernate.SQL] - drop table if exists authority cascade 
+2023-11-30 18:01:19,937 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 18:01:19,938 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 18:01:19,938 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 18:01:19,938 DEBUG [org.hibernate.SQL] - drop table if exists user cascade 
+2023-11-30 18:01:19,941 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 18:01:19,947 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-30 18:01:19,950 DEBUG [org.hibernate.SQL] - create table authority (id bigint not null, authority varchar(255), username varchar(255), primary key (id))
+2023-11-30 18:01:19,953 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-30 18:01:19,955 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-30 18:01:19,957 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-30 18:01:19,959 DEBUG [org.hibernate.SQL] - create table user (enabled boolean not null, password varchar(255), username varchar(255) not null, primary key (username))
+2023-11-30 18:01:19,960 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-30 18:01:19,965 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-30 18:01:21,297 DEBUG [org.hibernate.SQL] - drop table if exists authority cascade 
+2023-11-30 18:01:21,299 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 18:01:21,300 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 18:01:21,301 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 18:01:21,302 DEBUG [org.hibernate.SQL] - drop table if exists user cascade 
+2023-11-30 18:01:21,303 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 18:01:54,140 DEBUG [org.hibernate.SQL] - drop table if exists authority cascade 
+2023-11-30 18:01:54,155 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 18:01:54,155 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 18:01:54,155 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 18:01:54,155 DEBUG [org.hibernate.SQL] - drop table if exists user cascade 
+2023-11-30 18:01:54,158 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
+2023-11-30 18:01:54,166 DEBUG [org.hibernate.SQL] - create sequence matricule_seq start with 2 increment by 50
+2023-11-30 18:01:54,170 DEBUG [org.hibernate.SQL] - create table authority (id bigint not null, authority varchar(255), username varchar(255), primary key (id))
+2023-11-30 18:01:54,173 DEBUG [org.hibernate.SQL] - create table course (credits integer not null, id varchar(10) not null, title varchar(100), primary key (id))
+2023-11-30 18:01:54,175 DEBUG [org.hibernate.SQL] - create table course_students (students_id integer not null, courses_id varchar(255) not null, primary key (students_id, courses_id))
+2023-11-30 18:01:54,177 DEBUG [org.hibernate.SQL] - create table student (id integer not null, name varchar(100), gender varchar(255) not null check (gender in ('MALE','FEMALE')), section varchar(255) not null check (section in ('GESTION','INDUSTRIELLE','RESEAU')), primary key (id))
+2023-11-30 18:01:54,179 DEBUG [org.hibernate.SQL] - create table user (enabled boolean not null, password varchar(255), username varchar(255) not null, primary key (username))
+2023-11-30 18:01:54,180 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FK532dg5ikp3dvbrbiiqefdoe6m foreign key (students_id) references student
+2023-11-30 18:01:54,185 DEBUG [org.hibernate.SQL] - alter table if exists course_students add constraint FKh6irfl8rj4jgb3xrlyxsr2bdk foreign key (courses_id) references course
+2023-11-30 18:02:53,372 DEBUG [org.hibernate.SQL] - drop table if exists authority cascade 
+2023-11-30 18:02:53,376 DEBUG [org.hibernate.SQL] - drop table if exists course cascade 
+2023-11-30 18:02:53,377 DEBUG [org.hibernate.SQL] - drop table if exists course_students cascade 
+2023-11-30 18:02:53,378 DEBUG [org.hibernate.SQL] - drop table if exists student cascade 
+2023-11-30 18:02:53,378 DEBUG [org.hibernate.SQL] - drop table if exists user cascade 
+2023-11-30 18:02:53,380 DEBUG [org.hibernate.SQL] - drop sequence if exists matricule_seq
